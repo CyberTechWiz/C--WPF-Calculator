@@ -27,34 +27,33 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <TextBox Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="2" Name="Display" MinWidth="320" TextAlignment="Right" VerticalAlignment="Center" Text="" FontSize="36"/>
+            <TextBox Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="2" Name="Display" MinWidth="320" TextAlignment="Right" VerticalAlignment="Center" Text="0" FontSize="36" Margin="0,0,10,0"/>
             
             <!-- Кнопки для калькулятора -->
             <!-- 2-ая строка кнопок -->
-            <Button Grid.Row="2" Grid.Column="0" Grid.RowSpan="2" Content="=" FontSize="20"/>
-            <Button Grid.Row="2" Grid.Column="1" Content="х" FontSize="20"/>
-            <Button Grid.Row="2" Grid.Column="1" Content="х" FontSize="20"/>
-            <Button Grid.Row="2" Grid.Column="2" Content="С" FontSize="20"/>
-            <Button Grid.Row="2" Grid.Column="3" Content="/" FontSize="20"/>
+            <Button Grid.Row="2" Grid.Column="0" Content="C" FontSize="20"/>
+            <Button Grid.Row="2" Grid.Column="1" Content="⌫" FontSize="20"/> 
+            <Button Grid.Row="2" Grid.Column="2" Content="/" FontSize="20"/>
+            <Button Grid.Row="2" Grid.Column="3" Content="*" FontSize="20"/>
             <!-- 3-ая строка кнопок -->
-            <Button Grid.Row="3" Grid.Column="1" Content="0" FontSize="20"/>
-            <Button Grid.Row="3" Grid.Column="2" Content="1" FontSize="20"/>
-            <Button Grid.Row="3" Grid.Column="3" Content="*" FontSize="20"/>
+            <Button Grid.Row="3" Grid.Column="0" Content="7" FontSize="20"/>
+            <Button Grid.Row="3" Grid.Column="1" Content="8" FontSize="20"/>
+            <Button Grid.Row="3" Grid.Column="2" Content="9" FontSize="20"/>
+            <Button Grid.Row="3" Grid.Column="3" Content="+" FontSize="20"/>
 
-            <Button Grid.Row="4" Grid.Column="0" Content="2" FontSize="20"/>
-            <Button Grid.Row="4" Grid.Column="1" Content="3" FontSize="20"/>
-            <Button Grid.Row="4" Grid.Column="2" Content="4" FontSize="20"/>
-            <Button Grid.Row="4" Grid.Column="3" Content="+" FontSize="20"/>
+            <Button Grid.Row="4" Grid.Column="0" Content="4" FontSize="20"/>
+            <Button Grid.Row="4" Grid.Column="1" Content="5" FontSize="20"/>
+            <Button Grid.Row="4" Grid.Column="2" Content="6" FontSize="20"/>
+            <Button Grid.Row="4" Grid.Column="3" Content="-" FontSize="20"/>
 
-            <Button Grid.Row="5" Grid.Column="0" Content="5" FontSize="20"/>
-            <Button Grid.Row="5" Grid.Column="1" Content="6" FontSize="20"/>
-            <Button Grid.Row="5" Grid.Column="2" Content="7" FontSize="20"/>
-            <Button Grid.Row="5" Grid.Column="3" Content="-" FontSize="20"/>
+            <Button Grid.Row="5" Grid.Column="0" Content="1" FontSize="20"/>
+            <Button Grid.Row="5" Grid.Column="1" Content="2" FontSize="20"/>
+            <Button Grid.Row="5" Grid.Column="2" Content="3" FontSize="20"/>
+            <Button Grid.Row="5" Grid.Column="3" Content="=" Grid.RowSpan="2" FontSize="20"/>
 
             <Button Grid.Row="6" Grid.Column="0" Content="инж" FontSize="20"/>
-            <Button Grid.Row="6" Grid.Column="1" Content="8" FontSize="20"/>
-            <Button Grid.Row="6" Grid.Column="2" Content="9" FontSize="20"/>
-            <Button Grid.Row="6" Grid.Column="3" Content="," FontSize="20"/>
+            <Button Grid.Row="6" Grid.Column="1" Content="0" FontSize="20"/>
+            <Button Grid.Row="6" Grid.Column="2" Content="," FontSize="20"/>
 
         </Grid>
     </Grid>
