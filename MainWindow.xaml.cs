@@ -38,9 +38,14 @@ namespace WpfApp1
             }
         }
 
-        // Проверяем, является ли текущее содержимое дисплея результатом вычисления или ошибкой
-        bool isResultOrError = true;
+        // Начальный размер шрифта
+        private const double InitialFontSize = 36;
 
+        // Максимальная длина текста, при которой шрифт будет иметь начальный размер
+        private const int MaxLengthForInitialFontSize = 16;
+
+        // Проверяем, является ли текущее содержимое дисплея результатом вычисления или ошибкой
+        private bool isResultOrError = true;
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -54,7 +59,7 @@ namespace WpfApp1
                 case "C": // Очистка дисплея
                     Display.Text = "0";
                     isResultOrError = true;
-                    
+
                     break;
 
                 case "⌫": // Удаление последнего символа
@@ -105,6 +110,13 @@ namespace WpfApp1
                         {
                             Display.Text = "Error: empty";
                             break;
+                        }
+
+                        // Если последний сивол оператор - удаляем
+                        char lastChar = Display.Text[Display.Text.Length - 1];
+                        if (IsOperator(lastChar))
+                        {
+                            Display.Text = Display.Text.Substring(0, Display.Text.Length - 1);
                         }
 
                         // Заменяем запятые на точки в выражении
@@ -165,6 +177,8 @@ namespace WpfApp1
                     break;
             }
 
+            // Вызываем метод для настройки размера шрифта
+            AdjustFontSize();
         }
 
         // Метод для получения текущего числа (последнего числа в выражении)
@@ -184,6 +198,28 @@ namespace WpfApp1
         private bool IsOperator(char c)
         {
             return c == '+' || c == '-' || c == '*' || c == '/';
+        }
+
+        // Метод для настройки размера шрифта
+        private void AdjustFontSize()
+        {
+            // Определяем текущую длину текста
+            int textLength = Display.Text.Length;
+
+            // Если длина текста превышает MaxLengthForInitialFontSize, уменьшаем шрифт
+            if (textLength > MaxLengthForInitialFontSize)
+            {
+                // Вычисляем новый размер шрифта
+                double newFontSize = InitialFontSize * (MaxLengthForInitialFontSize / (double)textLength);
+
+                // Устанавливаем минимальный размер шрифта (например, 12)
+                Display.FontSize = Math.Max(newFontSize, 12);
+            }
+            else
+            {
+                // Если длина текста меньше или равна MaxLengthForInitialFontSize, возвращаем начальный размер
+                Display.FontSize = InitialFontSize;
+            }
         }
     }
 }
