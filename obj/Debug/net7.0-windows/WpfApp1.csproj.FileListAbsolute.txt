@@ -61,3 +61,11 @@ D:\project\lang\c++ proj\vs\wpf\WpfApp1 — копия (2) — копия\WpfApp
 D:\project\lang\c++ proj\vs\wpf\WpfApp1 — копия (2) — копия\WpfApp1\obj\Debug\net7.0-windows\WpfApp1.pdb
 D:\project\lang\c++ proj\vs\wpf\WpfApp1 — копия (2) — копия\WpfApp1\obj\Debug\net7.0-windows\WpfApp1.genruntimeconfig.cache
 D:\project\lang\c++ proj\vs\wpf\WpfApp1 — копия (2) — копия\WpfApp1\obj\Debug\net7.0-windows\ref\WpfApp1.dll
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\bin\Debug\net7.0-windows\Antlr4.Runtime.Standard.dll
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\bin\Debug\net7.0-windows\NCalc.dll
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\WpfApp1.csproj.AssemblyReference.cache
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\WpfApp1.csproj.Up2Date
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\ButtonStyles.baml
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\BasicCalculator.g.cs
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\App.baml
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\BasicCalculator.baml

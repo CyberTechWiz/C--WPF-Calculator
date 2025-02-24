@@ -49,6 +49,12 @@
       "frameworks": {
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
+          "dependencies": {
+            "CoreCLR-NCalc": {
+              "target": "Package",
+              "version": "[3.1.253, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

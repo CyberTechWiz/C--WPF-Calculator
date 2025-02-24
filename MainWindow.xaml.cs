@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using NCalc;  // Подключаем coreCLR-ncalc
 
 
 namespace WpfApp1
@@ -47,6 +48,12 @@ namespace WpfApp1
         // Проверяем, является ли текущее содержимое дисплея результатом вычисления или ошибкой
         private bool isResultOrError = true;
 
+        // Метод для преобразования градусов в радианы
+        private static double DegreeToRadian(double degree)
+        {
+            return degree * (Math.PI / 180);
+        }
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             // е - объект на который мы нажали
@@ -63,6 +70,11 @@ namespace WpfApp1
                     break;
 
                 case "⌫": // Удаление последнего символа
+                    if (isResultOrError)
+                    {
+                        Display.Text = "0";
+                        break;
+                    }
                     if (Display.Text.Length > 1)
                     {
                         Display.Text = Display.Text.Substring(0, Display.Text.Length - 1);
@@ -119,17 +131,35 @@ namespace WpfApp1
                             Display.Text = Display.Text.Substring(0, Display.Text.Length - 1);
                         }
 
-                        // Заменяем запятые на точки в выражении
-                        string expression = Display.Text.Replace(",", ".");
+                        // Используем NCalc для вычисления выражения
+                        string expression = Display.Text.Replace(",", "."); // Используем строку с дисплея и заменяем запятые на точки в выражении
+                        NCalc.Expression eCalc = new NCalc.Expression(expression);
+                        var result = eCalc.Evaluate();
 
-                        // Используем DataTable для вычисления выражения
-                        var result = new DataTable().Compute(expression, null);
+                        if (result == null)
+                        {
+                            Display.Text = "Error: Invalid expression";
+                        }
                         if (result.ToString() == "∞")
                         {
                             Display.Text = "Error: division by 0";
                         }
                         else
+                        {
                             Display.Text = result.ToString();
+                        }
+
+                        //// Заменяем запятые на точки в выражении
+                        //string expression = Display.Text.Replace(",", ".");
+
+                        //// Используем DataTable для вычисления выражения
+                        //var result = new DataTable().Compute(expression, null);
+                        //if (result.ToString() == "∞")
+                        //{
+                        //    Display.Text = "Error: division by 0";
+                        //}
+                        //else
+                        //    Display.Text = result.ToString();
                     }
                     catch (Exception ex)
                     {
@@ -167,6 +197,25 @@ namespace WpfApp1
                         !IsOperator(Display.Text[Display.Text.Length - 1]))
                     {
                         Display.Text += str;
+                        isResultOrError = false;
+                    }
+                    break;
+
+                case "Cos":
+                case "Sin":
+                case "Tan":
+                case "Cot":
+                    // Проверяем, что дисплей не пуст и последний символ не является оператором или запятой
+                    if (!string.IsNullOrEmpty(Display.Text) &&
+                        !IsOperator(Display.Text[Display.Text.Length - 1]))
+                    {
+                        string currentNumber = GetCurrentNumber(Display.Text); // Получаем текущее число
+
+                        // Преобразуем текущее число в радианы
+                        string radiansExpression = "DegreeToRadian(" + currentNumber + ")";
+
+                        // Добавляем тригонометрическую функцию с радианами в выражение
+                        Display.Text += str + "(" + radiansExpression + ")";
                         isResultOrError = false;
                     }
                     break;

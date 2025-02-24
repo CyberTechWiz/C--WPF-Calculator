@@ -7,62 +7,6 @@
         mc:Ignorable="d"
         Title="Калькулятор" Height="560" Width="340" 
         MinWidth="340" MinHeight="400">
-    <!-- Ресурсы для стилей кнопок -->
-    <Window.Resources>
-        <!-- Основной стиль для кнопок -->
-        <Style x:Key="FlatButtonStyle" TargetType="Button">
-            <Setter Property="Background" Value="#FFC3C3C3"/>
-            <Setter Property="Foreground" Value="Black"/>
-            <Setter Property="BorderThickness" Value="0"/>
-            <Setter Property="Padding" Value="10,5"/>
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="Button">
-                        <Border Background="{TemplateBinding Background}" 
-                                CornerRadius="2">
-                            <ContentPresenter HorizontalAlignment="Center" 
-                                              VerticalAlignment="Center"/>
-                        </Border>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-            <Setter Property="OverridesDefaultStyle" Value="True"/>
-            <Setter Property="Cursor" Value="Hand"/>
-            <Setter Property="FontSize" Value="14"/>
-            <Setter Property="FontWeight" Value="Bold"/>
-            <Setter Property="Effect">
-                <Setter.Value>
-                    <DropShadowEffect ShadowDepth="0" BlurRadius="0"/>
-                </Setter.Value>
-            </Setter>
-            <Style.Triggers>
-                <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Background" Value="Gray"/>
-                    <Setter Property="Foreground" Value="White"/>
-                </Trigger>
-                <Trigger Property="IsPressed" Value="True">
-                    <Setter Property="Background" Value="DarkGray"/>
-                    <Setter Property="Foreground" Value="White"/>
-                </Trigger>
-            </Style.Triggers>
-        </Style>
-
-        <!-- Светлый стиль для цифр, основанный на FlatButtonStyle -->
-        <Style x:Key="LightFlatButtonStyle" TargetType="Button" BasedOn="{StaticResource FlatButtonStyle}">
-            <Setter Property="Background" Value="#FFE0E0E0"/>
-            <!-- Более светлый цвет -->
-            <Style.Triggers>
-                <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Background" Value="#FF959595"/>
-                    <!-- Цвет при наведении -->
-                </Trigger>
-                <Trigger Property="IsPressed" Value="True">
-                    <Setter Property="Background" Value="#FFA0A0A0"/>
-                    <!-- Цвет при нажатии -->
-                </Trigger>
-            </Style.Triggers>
-        </Style>
-    </Window.Resources>
 
     <Grid>
         <!-- Сетка для кнопок -->
@@ -84,7 +28,7 @@
             </Grid.ColumnDefinitions>
 
             <!-- Поле ввода -->
-            <TextBox Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="2" Name="Display" IsReadOnly="True" MinWidth="320" TextAlignment="Right" VerticalAlignment="Center" Text="0" FontSize="36" Margin="0,0,5,0" Background="{x:Null}" BorderBrush="{x:Null}"/>
+            <TextBox Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="2" Name="Display" IsReadOnly="False" MinWidth="320" TextAlignment="Right" VerticalAlignment="Center" Text="0" FontSize="36" Margin="0,0,5,0" Background="{x:Null}" BorderBrush="{x:Null}"/>
 
             <!-- Кнопки для калькулятора -->
             <!-- 2-ая строка кнопок -->
