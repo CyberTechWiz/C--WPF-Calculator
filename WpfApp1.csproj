@@ -8,7 +8,25 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="media\fonts\Cera Pro Light.otf" />
+    <None Remove="media\fonts\Cera Pro Medium.otf" />
+    <None Remove="media\fonts\Cera Pro Regular.otf" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="CoreCLR-NCalc" Version="3.1.253" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Media\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="media\fonts\Cera Pro Light.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="media\fonts\Cera Pro Medium.otf" />
+    <Resource Include="media\fonts\Cera Pro Regular.otf" />
   </ItemGroup>
 
 </Project>

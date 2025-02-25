@@ -10,6 +10,9 @@
     <Compile Update="BasicCalculator.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="ScientificCalculator.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="MainWindow.xaml">

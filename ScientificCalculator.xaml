@@ -1,0 +1,78 @@
+﻿<UserControl x:Class="WpfApp1.ScientificCalculator"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfApp1"
+             mc:Ignorable="d" 
+             d:DesignHeight="560" d:DesignWidth="340" FontFamily="pack://application:,,,/media/fonts/#Cera Pro Light" >
+
+    <Grid>
+        <!-- Сетка для кнопок -->
+        <Grid x:Name="buttonsGrid" Background="#FFCECECE">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="160"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Поле ввода -->
+            <TextBox Grid.Column="0" Grid.ColumnSpan="5" x:Name="Display" IsReadOnly="False" MinWidth="320" TextAlignment="Right" VerticalAlignment="Center" Text="0" FontSize="36" Margin="-10,55,10,0" Background="{x:Null}" BorderBrush="{x:Null}" Height="48"/>
+
+            <!-- Кнопки для калькулятора -->
+            <!-- 1-ая строка кнопок -->
+            <Button Grid.Row="2" Grid.Column="0" Content="sin" FontSize="20" Margin="5,5,5,5" Style="{StaticResource FlatButtonStyle}" FontWeight="Normal"/>
+            <Button Grid.Row="2" Grid.Column="1" Content="xʸ" FontSize="20" Margin="5,5,5,5" Style="{StaticResource FlatButtonStyle}" FontWeight="Normal"/>
+            <Button Grid.Row="2" Grid.Column="2" Content="eˣ" FontSize="20" Margin="5,5,5,5" Style="{StaticResource FlatButtonStyle}" FontWeight="Normal"/>
+            <Button Grid.Row="2" Grid.Column="3" Content="C" FontSize="20" Margin="5,5,5,5" Style="{StaticResource FlatButtonStyle}" FontWeight="Normal"/>
+            <Button Grid.Row="2" Grid.Column="4" Content="⌫" FontSize="20" Margin="5,5,5,5" Style="{StaticResource FlatButtonStyle}" FontWeight="Normal"/>
+
+            <!-- 2-ая строка кнопок -->
+            <Button Grid.Row="3" Grid.Column="0" Content="cos" FontSize="20" Margin="5,5,5,5" Style="{StaticResource FlatButtonStyle}" FontWeight="Normal"/>
+            <Button Grid.Row="3" Grid.Column="1" Content="x²" FontSize="20" Margin="5,5,5,5" Style="{StaticResource FlatButtonStyle}" FontWeight="Normal"/>
+            <Button Grid.Row="3" Grid.Column="2" Content="√x" FontSize="20" Margin="5,5,5,5" Style="{StaticResource FlatButtonStyle}" FontWeight="Normal"/>
+            <Button Grid.Row="3" Grid.Column="3" Content="x!" FontSize="20" Margin="5,5,5,5" Style="{StaticResource FlatButtonStyle}" FontWeight="Normal"/>
+            <Button Grid.Row="3" Grid.Column="4" Content="/" FontSize="20" Margin="5,5,5,5" Style="{StaticResource FlatButtonStyle}" FontWeight="Normal"/>
+
+            <!-- 3-ая строка кнопок -->
+            <Button Grid.Row="4" Grid.Column="0" Content="tan" FontSize="20" Margin="5,5,5,5" Style="{StaticResource FlatButtonStyle}"/>
+            <Button Grid.Row="4" Grid.Column="1" Content="7" FontSize="20" Margin="5,5,5,5" Style="{StaticResource LightFlatButtonStyle}" FontWeight="Bold" FontFamily="pack://application:,,,/media/fonts/#Cera Pro Regular"/>
+            <Button Grid.Row="4" Grid.Column="2" Content="8" FontSize="20" Margin="5,5,5,5" Style="{StaticResource LightFlatButtonStyle}" FontWeight="Bold" FontFamily="pack://application:,,,/media/fonts/#Cera Pro Regular"/>
+            <Button Grid.Row="4" Grid.Column="3" Content="9" FontSize="20" Margin="5,5,5,5" Style="{StaticResource LightFlatButtonStyle}" FontWeight="Bold" FontFamily="pack://application:,,,/media/fonts/#Cera Pro Regular"/>
+            <Button Grid.Row="4" Grid.Column="4" Content="×" FontSize="20" Margin="5,5,5,5" Style="{StaticResource FlatButtonStyle}" FontWeight="Normal"/>
+
+            <!-- 4-ая строка кнопок -->
+            <Button Grid.Row="5" Grid.Column="0" Content="cot" FontSize="20" Margin="5,5,5,5" Style="{StaticResource FlatButtonStyle}"/>
+            <Button Grid.Row="5" Grid.Column="1" Content="4" FontSize="20" Margin="5,5,5,5" Style="{StaticResource LightFlatButtonStyle}" FontWeight="Bold" FontFamily="pack://application:,,,/media/fonts/#Cera Pro Regular"/>
+            <Button Grid.Row="5" Grid.Column="2" Content="5" FontSize="20" Margin="5,5,5,5" Style="{StaticResource LightFlatButtonStyle}" FontWeight="Bold" FontFamily="pack://application:,,,/media/fonts/#Cera Pro Regular"/>
+            <Button Grid.Row="5" Grid.Column="3" Content="6" FontSize="20" Margin="5,5,5,5" Style="{StaticResource LightFlatButtonStyle}" FontWeight="Normal" FontFamily="pack://application:,,,/media/fonts/#Cera Pro Regular"/>
+            <Button Grid.Row="5" Grid.Column="4" Content="-" FontSize="20" Margin="5,5,5,5" Style="{StaticResource FlatButtonStyle}" FontWeight="Normal"/>
+
+            <!-- 5-ая строка кнопок -->
+            <Button Grid.Row="6" Grid.Column="0" Content="log" FontSize="20" Margin="5,5,5,5" Style="{StaticResource FlatButtonStyle}" FontWeight="Bold"/>
+            <Button Grid.Row="6" Grid.Column="1" Content="1" FontSize="20" Margin="5,5,5,5" Style="{StaticResource LightFlatButtonStyle}" FontWeight="Bold" FontFamily="pack://application:,,,/media/fonts/#Cera Pro Regular"/>
+            <Button Grid.Row="6" Grid.Column="2" Content="2" FontSize="20" Margin="5,5,5,5" Style="{StaticResource LightFlatButtonStyle}" FontWeight="Bold" FontFamily="pack://application:,,,/media/fonts/#Cera Pro Regular"/>
+            <Button Grid.Row="6" Grid.Column="3" Content="3" FontSize="20" Margin="5,5,5,5" Style="{StaticResource LightFlatButtonStyle}" FontWeight="Normal" FontFamily="pack://application:,,,/media/fonts/#Cera Pro Regular"/>
+            <Button Grid.Row="6" Grid.Column="4" Content="+" FontSize="20" Margin="5,5,5,5" Style="{StaticResource FlatButtonStyle}" FontWeight="Normal"/>
+
+            <!-- 6-ая строка кнопок -->
+            <Button Grid.Row="7" Grid.Column="0" Content="bas" FontSize="20" Margin="5,5,5,5" Style="{StaticResource FlatButtonStyle}" FontWeight="Normal"/>
+            <Button Grid.Row="7" Grid.Column="1" Content="ln" FontSize="20" Margin="5,5,5,5" Style="{StaticResource FlatButtonStyle}" FontWeight="Bold"/>
+            <Button Grid.Row="7" Grid.Column="2" Content="0" FontSize="20" Margin="5,5,5,5" Style="{StaticResource LightFlatButtonStyle}" FontWeight="Normal" FontFamily="pack://application:,,,/media/fonts/#Cera Pro Regular"/>
+            <Button Grid.Row="7" Grid.Column="3" Content="," FontSize="20" Margin="5,5,5,5" Style="{StaticResource FlatButtonStyle}" FontWeight="Normal"/>
+            <Button Grid.Row="7" Grid.Column="4" Content="=" FontSize="20" Margin="5,5,5,5" Style="{StaticResource FlatButtonStyle}" FontWeight="Normal"/>
+        </Grid>
+    </Grid>
+</UserControl>

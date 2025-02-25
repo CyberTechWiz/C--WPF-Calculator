@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\App.xaml
-3407652237
+41780256810
 
-4-912964690
+5-1685660942
 200-1807627314
-BasicCalculator.xaml;ButtonStyles.xaml;MainWindow.xaml;
+BasicCalculator.xaml;ButtonStyles.xaml;MainWindow.xaml;ScientificCalculator.xaml;
 
 False
 

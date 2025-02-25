@@ -9,56 +9,11 @@
         MinWidth="340" MinHeight="400">
 
     <Grid>
-        <!-- Сетка для кнопок -->
-        <Grid x:Name="buttonsGrid" Background="#FFCECECE">
-            <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
+        <!-- Обычный калькулятор -->
+        <local:BasicCalculator x:Name="BasicCalculator" Visibility="Visible"/>
 
-            <!-- Поле ввода -->
-            <TextBox Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="2" Name="Display" IsReadOnly="False" MinWidth="320" TextAlignment="Right" VerticalAlignment="Center" Text="0" FontSize="36" Margin="0,0,5,0" Background="{x:Null}" BorderBrush="{x:Null}"/>
+        <!-- Инженерный калькулятор -->
+        <local:ScientificCalculator x:Name="ScientificCalculator" Visibility="Collapsed"/>
 
-            <!-- Кнопки для калькулятора -->
-            <!-- 2-ая строка кнопок -->
-            <Button Grid.Row="2" Grid.Column="0" Content="C" FontSize="20" Margin="5" Style="{StaticResource FlatButtonStyle}" FontWeight="Normal"/>
-            <Button Grid.Row="2" Grid.Column="1" Content="⌫" FontSize="20" Margin="5" Style="{StaticResource FlatButtonStyle}" FontWeight="Normal"/>
-            <Button Grid.Row="2" Grid.Column="2" Content="/" FontSize="20" Margin="5" Style="{StaticResource FlatButtonStyle}" FontWeight="Normal"/>
-            <Button Grid.Row="2" Grid.Column="3" Content="*" FontSize="20" Margin="5" Style="{StaticResource FlatButtonStyle}" FontWeight="Normal"/>
-
-            <!-- 3-ая строка кнопок -->
-            <Button Grid.Row="3" Grid.Column="0" Content="7" FontSize="20" Margin="5" Style="{StaticResource LightFlatButtonStyle}" FontWeight="Bold"/>
-            <Button Grid.Row="3" Grid.Column="1" Content="8" FontSize="20" Margin="5" Style="{StaticResource LightFlatButtonStyle}" FontWeight="Bold"/>
-            <Button Grid.Row="3" Grid.Column="2" Content="9" FontSize="20" Margin="5" Style="{StaticResource LightFlatButtonStyle}" FontWeight="Bold"/>
-            <Button Grid.Row="3" Grid.Column="3" Content="+" FontSize="20" Margin="5" Style="{StaticResource FlatButtonStyle}" FontWeight="Normal"/>
-
-            <!-- 4-ая строка кнопок -->
-            <Button Grid.Row="4" Grid.Column="0" Content="4" FontSize="20" Margin="5" Style="{StaticResource LightFlatButtonStyle}" FontWeight="Bold"/>
-            <Button Grid.Row="4" Grid.Column="1" Content="5" FontSize="20" Margin="5" Style="{StaticResource LightFlatButtonStyle}" FontWeight="Bold"/>
-            <Button Grid.Row="4" Grid.Column="2" Content="6" FontSize="20" Margin="5" Style="{StaticResource LightFlatButtonStyle}" FontWeight="Bold"/>
-            <Button Grid.Row="4" Grid.Column="3" Content="-" FontSize="20" Margin="5" Style="{StaticResource FlatButtonStyle}" FontWeight="Normal"/>
-
-            <!-- 5-ая строка кнопок -->
-            <Button Grid.Row="5" Grid.Column="0" Content="1" FontSize="20" Margin="5" Style="{StaticResource LightFlatButtonStyle}" FontWeight="Bold"/>
-            <Button Grid.Row="5" Grid.Column="1" Content="2" FontSize="20" Margin="5" Style="{StaticResource LightFlatButtonStyle}" FontWeight="Bold"/>
-            <Button Grid.Row="5" Grid.Column="2" Content="3" FontSize="20" Margin="5" Style="{StaticResource LightFlatButtonStyle}" FontWeight="Bold"/>
-            <Button Grid.Row="5" Grid.Column="3" Content="=" Grid.RowSpan="2" FontSize="20" Margin="5" Style="{StaticResource FlatButtonStyle}" FontWeight="Normal"/>
-
-            <!-- 6-ая строка кнопок -->
-            <Button Grid.Row="6" Grid.Column="0" Content="sci" FontSize="20" Margin="5" Style="{StaticResource FlatButtonStyle}" FontWeight="Normal"/>
-            <Button Grid.Row="6" Grid.Column="1" Content="0" FontSize="20" Margin="5" Style="{StaticResource LightFlatButtonStyle}" FontWeight="Bold"/>
-            <Button Grid.Row="6" Grid.Column="2" Content="," FontSize="20" Margin="5" Style="{StaticResource FlatButtonStyle}" FontWeight="Normal"/>
-        </Grid>
     </Grid>
 </Window>

@@ -18,7 +18,7 @@
             </Setter.Value>
         </Setter>
         <Setter Property="OverridesDefaultStyle" Value="True"/>
-        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Cursor" Value="Arrow"/>
         <Setter Property="FontSize" Value="14"/>
         <Setter Property="FontWeight" Value="Bold"/>
         <Setter Property="Effect">
