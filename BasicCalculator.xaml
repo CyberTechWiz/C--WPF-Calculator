@@ -9,7 +9,7 @@
 
     <Grid>
         <!-- Сетка для кнопок -->
-        <Grid x:Name="buttonsGrid" Background="#FFCECECE">
+        <Grid x:Name="buttonsGrid" Background="#FFE5E5E5">
             <Grid.RowDefinitions>
                 <RowDefinition Height="120"/>
                 <RowDefinition Height="97"/>
@@ -55,7 +55,7 @@
             <Button Grid.Row="5" Grid.Column="3" Content="=" Grid.RowSpan="2" FontSize="20" Margin="5,5,5,5" Style="{StaticResource FlatButtonStyle}" FontWeight="Normal"/>
 
             <!-- 6-ая строка кнопок -->
-            <Button Grid.Row="6" Grid.Column="0" Content="sci" FontSize="20" Margin="5,5,5,5" Style="{StaticResource FlatButtonStyle}" FontWeight="Normal"/>
+            <Button Grid.Row="6" Grid.Column="0" Content="sci" FontSize="20" Margin="5,5,5,5" Style="{StaticResource DarkFlatButtonStyle}" FontWeight="Normal"/>
             <Button Grid.Row="6" Grid.Column="1" Content="0" FontSize="20" Margin="5,5,5,5" Style="{StaticResource LightFlatButtonStyle}" FontWeight="Bold" FontFamily="pack://application:,,,/media/fonts/#Cera Pro Regular"/>
             <Button Grid.Row="6" Grid.Column="2" Content="," FontSize="20" Margin="5,5,5,5" Style="{StaticResource FlatButtonStyle}" FontWeight="Normal"/>
         </Grid>

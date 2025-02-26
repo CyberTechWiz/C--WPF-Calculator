@@ -2,15 +2,18 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <!-- Основной стиль для кнопок -->
     <Style x:Key="FlatButtonStyle" TargetType="Button">
-        <Setter Property="Background" Value="LightGray"/>
-        <Setter Property="Foreground" Value="Black"/>
+        <!-- Цвет фона по умолчанию -->
+        <Setter Property="Background" Value="#ececec"/>
+        <!-- Цвет текста по умолчанию черный -->
+        <Setter Property="Foreground" Value="Black"/> 
         <Setter Property="BorderThickness" Value="0"/>
         <Setter Property="Padding" Value="10,5"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="Button">
                     <Border Background="{TemplateBinding Background}" 
-                            CornerRadius="2">
+                            >
+                        <!-- CornerRadius="1.8" -->
                         <ContentPresenter HorizontalAlignment="Center" 
                                           VerticalAlignment="Center"/>
                     </Border>
@@ -28,29 +31,35 @@
         </Setter>
         <Style.Triggers>
             <Trigger Property="IsMouseOver" Value="True">
-                <Setter Property="Background" Value="Gray"/>
-                <Setter Property="Foreground" Value="White"/>
+                <Setter Property="Background" Value="#e5e5e5"/>
+                <Setter Property="Foreground" Value="Black"/>
             </Trigger>
             <Trigger Property="IsPressed" Value="True">
-                <Setter Property="Background" Value="DarkGray"/>
-                <Setter Property="Foreground" Value="White"/>
+                <Setter Property="Background" Value="#e1e1e1"/>
+                <Setter Property="Foreground" Value="#7e7e7e"/>
             </Trigger>
         </Style.Triggers>
     </Style>
 
     <!-- Светлый стиль для цифр, основанный на FlatButtonStyle -->
     <Style x:Key="LightFlatButtonStyle" TargetType="Button" BasedOn="{StaticResource FlatButtonStyle}">
-        <Setter Property="Background" Value="#FFE0E0E0"/>
+        <Setter Property="Background" Value="#f9f9f9"/>
         <!-- Более светлый цвет -->
         <Style.Triggers>
             <Trigger Property="IsMouseOver" Value="True">
-                <Setter Property="Background" Value="#FFC0C0C0"/>
+                <Setter Property="Background" Value="#f3f3f3"/>
                 <!-- Цвет при наведении -->
             </Trigger>
             <Trigger Property="IsPressed" Value="True">
-                <Setter Property="Background" Value="#FFA0A0A0"/>
+                <Setter Property="Background" Value="#eeeeee"/>
                 <!-- Цвет при нажатии -->
             </Trigger>
         </Style.Triggers>
+    </Style>
+
+    <!-- ТЁмный стиль для цифр, основанный на FlatButtonStyle -->
+    <Style x:Key="DarkFlatButtonStyle" TargetType="Button" BasedOn="{StaticResource FlatButtonStyle}">
+        <Setter Property="Background" Value="#FFC3C3C3"/>
+        <!-- Более темный цвет -->
     </Style>
 </ResourceDictionary>

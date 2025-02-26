@@ -29,6 +29,11 @@ namespace WpfApp1
 
             // Подписываемся на событие SwitchToScientific
             BasicCalculator.SwitchToScientific += BasicCalculator_SwitchToScientific;
+            ScientificCalculator.SwitchToBasic += ScientificCalculator_SwitchToBasic;
+
+            // Изначально виден обычный калькулятор
+            BasicCalculator.Visibility = Visibility.Visible;
+            ScientificCalculator.Visibility = Visibility.Collapsed;
         }
 
         // Обработчик события SwitchToScientific
@@ -39,6 +44,12 @@ namespace WpfApp1
             BasicCalculator.Visibility = Visibility.Collapsed;
         }
 
-
+        // Обработчик события SwitchToBasic
+        private void ScientificCalculator_SwitchToBasic(object sender, EventArgs e)
+        {
+            // Переключаем видимость
+            BasicCalculator.Visibility = Visibility.Visible;
+            ScientificCalculator.Visibility = Visibility.Collapsed;
+        }
     }
 }

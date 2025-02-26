@@ -29,8 +29,6 @@ namespace WpfApp1
         {
             InitializeComponent();
 
-            // Находим кнопку "sci" и подписываемся на её событие Click
-            var sciButton = this.FindName("SciButton") as Button;
 
 
             /// Перебираем все элементы из сетки для кнопок и выбираем только кнопки 
@@ -207,26 +205,8 @@ namespace WpfApp1
                     }
                     break;
 
-                case "Cos":
-                case "Sin":
-                case "Tan":
-                case "Cot":
-                    // Проверяем, что дисплей не пуст и последний символ не является оператором или запятой
-                    if (!string.IsNullOrEmpty(Display.Text) &&
-                        !IsOperator(Display.Text[Display.Text.Length - 1]))
-                    {
-                        string currentNumber = GetCurrentNumber(Display.Text); // Получаем текущее число
-
-                        // Преобразуем текущее число в радианы
-                        string radiansExpression = "DegreeToRadian(" + currentNumber + ")";
-
-                        // Добавляем тригонометрическую функцию с радианами в выражение
-                        Display.Text += str + "(" + radiansExpression + ")";
-                        isResultOrError = false;
-                    }
-                    break;
-
                 case "sci":
+                    Display.Text = "0";
                     SwitchToScientific?.Invoke(this, EventArgs.Empty); // Обработчик события перехода к инженерному калькулятору
                     break;
 
