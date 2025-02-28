@@ -1,32 +1,34 @@
-D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\bin\Debug\net7.0-windows\WpfApp1.exe
-D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\bin\Debug\net7.0-windows\WpfApp1.deps.json
-D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\bin\Debug\net7.0-windows\WpfApp1.runtimeconfig.json
-D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\bin\Debug\net7.0-windows\WpfApp1.dll
-D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\bin\Debug\net7.0-windows\WpfApp1.pdb
-D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\bin\Debug\net7.0-windows\Antlr4.Runtime.Standard.dll
-D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\bin\Debug\net7.0-windows\NCalc.dll
-D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\WpfApp1.csproj.AssemblyReference.cache
-D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\ButtonStyles.baml
-D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\BasicCalculator.g.cs
-D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\MainWindow.g.cs
-D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\ScientificCalculator.g.cs
-D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\App.g.cs
-D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\GeneratedInternalTypeHelper.g.cs
-D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\WpfApp1_MarkupCompile.cache
-D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\WpfApp1_MarkupCompile.lref
-D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\App.baml
-D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\BasicCalculator.baml
-D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\MainWindow.baml
-D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\ScientificCalculator.baml
-D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\WpfApp1.g.resources
-D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\WpfApp1.GeneratedMSBuildEditorConfig.editorconfig
-D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\WpfApp1.AssemblyInfoInputs.cache
-D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\WpfApp1.AssemblyInfo.cs
-D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\WpfApp1.csproj.CoreCompileInputs.cache
-D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\WpfApp1.sourcelink.json
-D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\WpfApp1.csproj.Up2Date
-D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\WpfApp1.dll
-D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\refint\WpfApp1.dll
-D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\WpfApp1.pdb
-D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\WpfApp1.genruntimeconfig.cache
-D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\ref\WpfApp1.dll
+D:\project\lang\c++ proj\vs\wpf\WpfApp1 — копия\WpfApp1\bin\Debug\net7.0-windows\WpfApp1.exe
+D:\project\lang\c++ proj\vs\wpf\WpfApp1 — копия\WpfApp1\bin\Debug\net7.0-windows\WpfApp1.deps.json
+D:\project\lang\c++ proj\vs\wpf\WpfApp1 — копия\WpfApp1\bin\Debug\net7.0-windows\WpfApp1.runtimeconfig.json
+D:\project\lang\c++ proj\vs\wpf\WpfApp1 — копия\WpfApp1\bin\Debug\net7.0-windows\WpfApp1.dll
+D:\project\lang\c++ proj\vs\wpf\WpfApp1 — копия\WpfApp1\bin\Debug\net7.0-windows\WpfApp1.pdb
+D:\project\lang\c++ proj\vs\wpf\WpfApp1 — копия\WpfApp1\bin\Debug\net7.0-windows\Antlr4.Runtime.Standard.dll
+D:\project\lang\c++ proj\vs\wpf\WpfApp1 — копия\WpfApp1\bin\Debug\net7.0-windows\NCalc.dll
+D:\project\lang\c++ proj\vs\wpf\WpfApp1 — копия\WpfApp1\obj\Debug\net7.0-windows\WpfApp1.csproj.AssemblyReference.cache
+D:\project\lang\c++ proj\vs\wpf\WpfApp1 — копия\WpfApp1\obj\Debug\net7.0-windows\Styles\ButtonStyles.baml
+D:\project\lang\c++ proj\vs\wpf\WpfApp1 — копия\WpfApp1\obj\Debug\net7.0-windows\Styles\TextBoxStyles.baml
+D:\project\lang\c++ proj\vs\wpf\WpfApp1 — копия\WpfApp1\obj\Debug\net7.0-windows\BasicCalculator.g.cs
+D:\project\lang\c++ proj\vs\wpf\WpfApp1 — копия\WpfApp1\obj\Debug\net7.0-windows\MainWindow.g.cs
+D:\project\lang\c++ proj\vs\wpf\WpfApp1 — копия\WpfApp1\obj\Debug\net7.0-windows\ScientificCalculator.g.cs
+D:\project\lang\c++ proj\vs\wpf\WpfApp1 — копия\WpfApp1\obj\Debug\net7.0-windows\App.g.cs
+D:\project\lang\c++ proj\vs\wpf\WpfApp1 — копия\WpfApp1\obj\Debug\net7.0-windows\GeneratedInternalTypeHelper.g.cs
+D:\project\lang\c++ proj\vs\wpf\WpfApp1 — копия\WpfApp1\obj\Debug\net7.0-windows\WpfApp1_MarkupCompile.cache
+D:\project\lang\c++ proj\vs\wpf\WpfApp1 — копия\WpfApp1\obj\Debug\net7.0-windows\WpfApp1_MarkupCompile.lref
+D:\project\lang\c++ proj\vs\wpf\WpfApp1 — копия\WpfApp1\obj\Debug\net7.0-windows\App.baml
+D:\project\lang\c++ proj\vs\wpf\WpfApp1 — копия\WpfApp1\obj\Debug\net7.0-windows\BasicCalculator.baml
+D:\project\lang\c++ proj\vs\wpf\WpfApp1 — копия\WpfApp1\obj\Debug\net7.0-windows\MainWindow.baml
+D:\project\lang\c++ proj\vs\wpf\WpfApp1 — копия\WpfApp1\obj\Debug\net7.0-windows\ScientificCalculator.baml
+D:\project\lang\c++ proj\vs\wpf\WpfApp1 — копия\WpfApp1\obj\Debug\net7.0-windows\WpfApp1.g.resources
+D:\project\lang\c++ proj\vs\wpf\WpfApp1 — копия\WpfApp1\obj\Debug\net7.0-windows\WpfApp1.GeneratedMSBuildEditorConfig.editorconfig
+D:\project\lang\c++ proj\vs\wpf\WpfApp1 — копия\WpfApp1\obj\Debug\net7.0-windows\WpfApp1.AssemblyInfoInputs.cache
+D:\project\lang\c++ proj\vs\wpf\WpfApp1 — копия\WpfApp1\obj\Debug\net7.0-windows\WpfApp1.AssemblyInfo.cs
+D:\project\lang\c++ proj\vs\wpf\WpfApp1 — копия\WpfApp1\obj\Debug\net7.0-windows\WpfApp1.csproj.CoreCompileInputs.cache
+D:\project\lang\c++ proj\vs\wpf\WpfApp1 — копия\WpfApp1\obj\Debug\net7.0-windows\WpfApp1.sourcelink.json
+D:\project\lang\c++ proj\vs\wpf\WpfApp1 — копия\WpfApp1\obj\Debug\net7.0-windows\WpfApp1.csproj.Up2Date
+D:\project\lang\c++ proj\vs\wpf\WpfApp1 — копия\WpfApp1\obj\Debug\net7.0-windows\WpfApp1.dll
+D:\project\lang\c++ proj\vs\wpf\WpfApp1 — копия\WpfApp1\obj\Debug\net7.0-windows\refint\WpfApp1.dll
+D:\project\lang\c++ proj\vs\wpf\WpfApp1 — копия\WpfApp1\obj\Debug\net7.0-windows\WpfApp1.pdb
+D:\project\lang\c++ proj\vs\wpf\WpfApp1 — копия\WpfApp1\obj\Debug\net7.0-windows\WpfApp1.genruntimeconfig.cache
+D:\project\lang\c++ proj\vs\wpf\WpfApp1 — копия\WpfApp1\obj\Debug\net7.0-windows\ref\WpfApp1.dll
+D:\project\lang\c++ proj\vs\wpf\WpfApp1 — копия\WpfApp1\bin\Debug\net7.0-windows\MathNet.Numerics.dll

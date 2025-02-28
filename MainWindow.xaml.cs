@@ -34,7 +34,20 @@ namespace WpfApp1
             // Изначально виден обычный калькулятор
             BasicCalculator.Visibility = Visibility.Visible;
             ScientificCalculator.Visibility = Visibility.Collapsed;
+
+            // Подписываемся на событие загрузки окна
+            this.Loaded += MainWindow_Loaded;
+            
         }
+
+        //Устанавливает фокус на дисплей базвого клькулятора (всё ради ввода с клавиатуры)
+        private void MainWindow_Loaded(object sender, RoutedEventArgs e)
+        {
+            // Устанавливаем фокус на TextBox внутри UserControl
+            BasicCalculator.Display.Focus();
+        }
+
+
 
         // Обработчик события SwitchToScientific
         private void BasicCalculator_SwitchToScientific(object sender, EventArgs e)
@@ -42,6 +55,14 @@ namespace WpfApp1
             // Переключаем видимость
             ScientificCalculator.Visibility = Visibility.Visible;
             BasicCalculator.Visibility = Visibility.Collapsed;
+
+            // Отложенный вызов Focus() через Dispatcher
+            Dispatcher.BeginInvoke(new Action(() =>
+            {
+
+                // Устанавливаем фокус на TextBox базового калькулятора
+                ScientificCalculator.Display.Focus();
+            }), System.Windows.Threading.DispatcherPriority.Render);
         }
 
         // Обработчик события SwitchToBasic
@@ -50,6 +71,11 @@ namespace WpfApp1
             // Переключаем видимость
             BasicCalculator.Visibility = Visibility.Visible;
             ScientificCalculator.Visibility = Visibility.Collapsed;
+
+            // Устанавливаем фокус на TextBox научного калькулятора
+            BasicCalculator.Display.Focus();
         }
+
+
     }
 }

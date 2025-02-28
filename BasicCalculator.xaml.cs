@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,24 +24,163 @@ namespace WpfApp1
     public partial class BasicCalculator : UserControl
     {
 
+
         // Создаем событие для переключения на научный калькулятор
         public event EventHandler SwitchToScientific;
+
         public BasicCalculator()
         {
             InitializeComponent();
 
+            Display.Focus();
 
+            // Подписка на событие KeyDown для обработки нажатий клавиш на уровне UserControl
+            // Это событие будет срабатывать, когда пользователь нажимает клавиши в пределах UserControl.
+            this.KeyDown += UserControl_KeyDown;
 
-            /// Перебираем все элементы из сетки для кнопок и выбираем только кнопки 
+            // Отключаем обработку событий клавиатуры в TextBox, чтобы избежать конфликтов
+            // Display — это текстовое поле, в котором отображаются числа и операторы калькулятора.
+            // Используется PreviewKeyDown, чтобы перехватить нажатие клавиш еще до того, как оно будет обработано самим TextBox.
+            Display.PreviewKeyDown += Display_PreviewKeyDown;
+
+            // Подписка на событие Click для кнопок
             foreach (UIElement el in buttonsGrid.Children)
             {
                 if (el is Button)
                 {
-                    ///объект el класса UIElement поэтому его нужно преобразовать в класс Button
-                    // Подписываемся на событие Click для каждой кнопки
                     ((Button)el).Click += Button_Click;
                 }
             }
+        }
+
+        private void UserControl_KeyDown(object sender, KeyEventArgs e)
+        {
+            try
+            {
+                // Обрабатываем нажатие клавиши
+                // В этой функции обрабатываются все нажатия клавиш на уровне UserControl
+                HandleKeyPress(e.Key);  // Вызываем метод, который будет обрабатывать конкретные клавиши (например, цифры или операторы)
+
+                // Если нажата клавиша Enter, останавливаем дальнейшее распространение события
+                // Это необходимо, чтобы предотвратить выполнение нежелательных действий после нажатия Enter.
+                if (e.Key == Key.Enter)
+                {
+                    e.Handled = true;  // Помечаем событие как обработанное, чтобы другие элементы не обрабатывали его.
+                }
+            }
+            catch (Exception ex)
+            {
+                // Ловим все исключения, которые могут возникнуть при обработке нажатий клавиш
+                // Например, если вдруг возникнет ошибка в обработке символа, будет выведено сообщение в отладчик.
+                Debug.WriteLine($"Error: {ex.Message}");
+            }
+        }
+
+        private void Display_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            // Отменяем обработку события в текущем элементе, чтобы оно не распространялось дальше
+            // Это важно, чтобы TextBox не обрабатывал клавиши по своему усмотрению (например, если нам нужно перехватить их для калькулятора)
+            e.Handled = true;
+
+            // Передаем событие в основной обработчик UserControl
+            // Таким образом, все клавиши, которые нажаты в TextBox, обрабатываются как если бы они были нажаты на уровне UserControl.
+            UserControl_KeyDown(sender, e);
+        }
+
+        private void HandleKeyPress(Key key)
+        {
+            string str = "";
+
+            // Проверяем, нажата ли клавиша Shift
+            bool isShiftPressed = (Keyboard.Modifiers & ModifierKeys.Shift) == ModifierKeys.Shift;
+
+            // Преобразование клавиш в строки
+            switch (key)
+            {
+
+                case Key.OemPlus: // Плюс "+" (Shift + =)
+                    str = "+";
+                    break;
+                case Key.OemMinus: // Минус "-" (без Shift)
+                    str = "-";
+                    break;
+                case Key.OemQuestion: // Слэш "/" (Shift + 7)
+                    str = "/";
+                    break;
+
+                case Key.D0:
+                case Key.NumPad0:
+                    str = isShiftPressed ? ")" : "0"; // Shift + 0 -> ")", иначе "0"
+                    break;
+                case Key.D1:
+                case Key.NumPad1:
+                    str = "1";
+                    break;
+                case Key.D2:
+                case Key.NumPad2:
+                    str = "2";
+                    break;
+                case Key.D3:
+                case Key.NumPad3:
+                    str = "3";
+                    break;
+                case Key.D4:
+                case Key.NumPad4:
+                    str = "4";
+                    break;
+                case Key.D5:
+                case Key.NumPad5:
+                    str = "5";
+                    break;
+                case Key.D6:
+                case Key.NumPad6:
+                    str = "6";
+                    break;
+                case Key.D7:
+                case Key.NumPad7:
+                    str = isShiftPressed ? "/" : "7"; // Shift + 7 -> "/", иначе "7"
+                    break;
+                case Key.D8:
+                case Key.NumPad8:
+                    str = "8";
+                    break;
+                case Key.D9:
+                case Key.NumPad9:
+                    str = "9";
+                    break;
+                case Key.Add:
+                    str = "+";
+                    break;
+                case Key.Subtract:
+                    str = "-";
+                    break;
+                case Key.Multiply:
+                    str = "×";
+                    break;
+                case Key.Divide:
+                    str = "/";
+                    break;
+                case Key.Enter:
+                    str = "=";
+                    break;
+                case Key.Back:
+                    str = "⌫";
+                    break;
+                case Key.Escape:
+                    str = "C";
+                    break;
+                case Key.OemPeriod:
+                case Key.Decimal:
+                    str = ",";
+                    break;
+
+
+                default:
+                    return; // Игнорируем другие клавиши
+            }
+
+            // Обрабатываем ввод
+            ProcessInput(str);
         }
 
         // Начальный размер шрифта
@@ -63,6 +203,15 @@ namespace WpfApp1
             // е - объект на который мы нажали
             // Content позволит получить надпись с нажатой кнопки а затем преобразуем ее в строку
             string str = (string)((Button)e.OriginalSource).Content;
+
+            // Обрабатываем ввод
+            ProcessInput(str);
+
+            if (str != "sci")
+                // Снимаем фокус с кнопки, чтобы фокус оставался на TextBox
+                Display.Focus();
+        }
+        private void ProcessInput(string str) { 
 
             // Обработка различных кнопок
             switch (str)
@@ -87,6 +236,7 @@ namespace WpfApp1
                     else
                         // Если строка пустая или содержит только один символ
                         Display.Text = "0";
+                        isResultOrError = true;
                     break;
 
                 case ",": // В каждом числе может быть только одна запятая :)
@@ -194,7 +344,7 @@ namespace WpfApp1
 
                 case "+":
                 case "-":
-                case "*":
+                case "×":
                 case "/":
                     // Проверяем, что дисплей не пуст и последний символ не является оператором или запятой
                     if (!string.IsNullOrEmpty(Display.Text) &&
@@ -207,6 +357,7 @@ namespace WpfApp1
 
                 case "sci":
                     Display.Text = "0";
+                    isResultOrError = true;
                     SwitchToScientific?.Invoke(this, EventArgs.Empty); // Обработчик события перехода к инженерному калькулятору
                     break;
 
@@ -224,7 +375,7 @@ namespace WpfApp1
         protected string GetCurrentNumber(string expression)
         {
             // Разделяем выражение на части по операторам
-            char[] operators = { '+', '-', '*', '/' };
+            char[] operators = { '+', '-', '*', '/', '×' };
             string[] parts = expression.Split(operators);
 
             // Берем последнюю часть (текущее число)
@@ -236,7 +387,7 @@ namespace WpfApp1
         // Метод для проверки, является ли символ оператором
         protected bool IsOperator(char c)
         {
-            return c == '+' || c == '-' || c == '*' || c == '/';
+            return c == '+' || c == '-' || c == '*' || c == '/' || c == '×';
         }
 
         // Метод для настройки размера шрифта

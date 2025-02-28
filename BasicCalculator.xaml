@@ -5,7 +5,9 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:WpfApp1"
              mc:Ignorable="d" 
+             Focusable="True"
              d:DesignHeight="560" d:DesignWidth="340" FontFamily="pack://application:,,,/media/fonts/#Cera Pro Light" >
+
 
     <Grid>
         <!-- Сетка для кнопок -->
@@ -27,7 +29,11 @@
             </Grid.ColumnDefinitions>
 
             <!-- Поле ввода -->
-            <TextBox Grid.Column="0" Grid.ColumnSpan="4" x:Name="Display" IsReadOnly="False" MinWidth="320" TextAlignment="Right" VerticalAlignment="Top" Text="0" FontSize="36" Margin="-10,55,10,0" Background="{x:Null}" BorderBrush="{x:Null}" Height="45"/>
+            <TextBox Grid.Column="0" Grid.ColumnSpan="4" x:Name="Display" IsReadOnlyCaretVisible="False"
+                     IsReadOnly="True" MinWidth="320" TextAlignment="Right" 
+                     VerticalAlignment="Top" Text="0" FontSize="36" 
+                     Style="{StaticResource NoFocusBorderTextBoxStyle}"
+                     Margin="-10,55,10,0" Background="{x:Null}" BorderBrush="{x:Null}" Height="45"/>
 
             <!-- Кнопки для калькулятора -->
             <!-- 2-ая строка кнопок -->

@@ -5,6 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:WpfApp1"
              mc:Ignorable="d" 
+             Focusable="True"
              d:DesignHeight="560" d:DesignWidth="340" FontFamily="pack://application:,,,/media/fonts/#Cera Pro Light" >
 
     <Grid>
@@ -29,7 +30,11 @@
             </Grid.ColumnDefinitions>
 
             <!-- Поле ввода -->
-            <TextBox Grid.Column="0" Grid.ColumnSpan="5" x:Name="Display" IsReadOnly="False" MinWidth="320" TextAlignment="Right" VerticalAlignment="Center" Text="0" FontSize="36" Margin="-10,0,10,0" Background="{x:Null}" BorderBrush="{x:Null}" Height="48" SelectionBrush="{x:Null}" SelectionTextBrush="{x:Null}"/>
+            <TextBox Grid.Column="0" Grid.ColumnSpan="5" x:Name="Display" IsReadOnly="True"
+                     IsReadOnlyCaretVisible="False" Style="{StaticResource NoFocusBorderTextBoxStyle}"
+                     MinWidth="320" TextAlignment="Right" VerticalAlignment="Center" Text="0" FontSize="36"
+                     Margin="-10,0,10,0" Background="{x:Null}" BorderBrush="{x:Null}" Height="48" 
+                     SelectionBrush="{x:Null}" SelectionTextBrush="{x:Null}"/>
 
             <!-- Кнопки для калькулятора -->
             <!-- 1-ая строка кнопок -->
@@ -42,8 +47,8 @@
 
             <!-- 2-ая строка кнопок -->
             <Button Grid.Row="2" Grid.Column="0" Content="cos" FontSize="20" Margin="5,5,5,5" Style="{StaticResource FlatButtonStyle}" FontWeight="Normal"/>
-            <Button Grid.Row="2" Grid.Column="1" Content="xʸ" FontSize="20" Margin="5,5,5,5" Style="{StaticResource FlatButtonStyle}" FontWeight="Normal" IsEnabled="False" Opacity="0.4"/>
-            <Button Grid.Row="2" Grid.Column="2" Content="ʸ√x" FontSize="20" Margin="5,5,5,5" Style="{StaticResource FlatButtonStyle}" FontWeight="Normal" IsEnabled="False" Opacity="0.4"/>
+            <Button Grid.Row="2" Grid.Column="1" Content="xʸ" FontSize="20" Margin="5,5,5,5" Style="{StaticResource FlatButtonStyle}" FontWeight="Normal"/>
+            <Button Grid.Row="2" Grid.Column="2" Content="ʸ√x" FontSize="20" Margin="5,5,5,5" Style="{StaticResource FlatButtonStyle}" FontWeight="Normal"/>
             <Button Grid.Row="2" Grid.Column="3" Content="eˣ" FontSize="20" Margin="5,5,5,5" Style="{StaticResource FlatButtonStyle}" FontWeight="Normal"/>
             <Button Grid.Row="2" Grid.Column="4" Content="/" FontSize="20" Margin="5,5,5,5" Style="{StaticResource FlatButtonStyle}" FontWeight="Normal"/>
 
@@ -77,7 +82,7 @@
 
             <!-- 6-ая строка кнопок -->
             <Button Grid.Row="7" Grid.Column="0" Content="bas" FontSize="20" Margin="5,5,5,5" Style="{StaticResource DarkFlatButtonStyle}" FontWeight="Normal"/>
-            <Button Grid.Row="7" Grid.Column="1" Content="+/-" FontSize="20" Margin="5,5,5,5" Style="{StaticResource FlatButtonStyle}" FontWeight="Bold" IsEnabled="False" Opacity="0.4"/>
+            <Button Grid.Row="7" Grid.Column="1" Content="+/-" FontSize="20" Margin="5,5,5,5" Style="{StaticResource FlatButtonStyle}" FontWeight="Bold"/>
             <Button Grid.Row="7" Grid.Column="2" Content="0" FontSize="20" Margin="5,5,5,5" Style="{StaticResource LightFlatButtonStyle}" FontWeight="Normal" FontFamily="pack://application:,,,/media/fonts/#Cera Pro Regular"/>
             <Button Grid.Row="7" Grid.Column="3" Content="," FontSize="20" Margin="5,5,5,5" Style="{StaticResource FlatButtonStyle}" FontWeight="Normal"/>
             
