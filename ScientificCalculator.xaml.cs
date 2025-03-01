@@ -824,7 +824,26 @@ namespace WpfApp1
                     break;
 
                 case "+/-": // Кнопка "negative" (изменение знака числа)
-                    
+                    if (!string.IsNullOrEmpty(Display.Text))
+                    {
+                        // Получаем текущее число (последний элемент после оператора)
+                        string currentNumber = GetCurrentNumber(Display.Text);
+
+                        if (double.TryParse(currentNumber, out double number))
+                        {
+                            // Меняем знак числа
+                            number = -number;
+
+                            // Заменяем текущее число на дисплее на число с измененным знаком
+                            string newText = Display.Text.Substring(0, Display.Text.Length - currentNumber.Length) + number.ToString();
+                            Display.Text = newText;
+                        }
+                        else
+                        {
+                            // Если не удалось распарсить число, выводим ошибку
+                            Display.Text = "Error: Invalid input";
+                        }
+                    }
                     break;
 
                 case "bas":
@@ -877,6 +896,7 @@ namespace WpfApp1
         {
             return c == '+' || c == '-' || c == '*' || c == '/' || c == '×';
         }
+
 
         // Метод для настройки размера шрифта
         protected void AdjustFontSize()
