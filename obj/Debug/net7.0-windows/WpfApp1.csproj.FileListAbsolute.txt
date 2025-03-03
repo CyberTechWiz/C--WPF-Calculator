@@ -33,7 +33,6 @@ D:\project\lang\c++ proj\vs\wpf\WpfApp1 — копия\WpfApp1\obj\Debug\net7.0-
 D:\project\lang\c++ proj\vs\wpf\WpfApp1 — копия\WpfApp1\obj\Debug\net7.0-windows\ref\WpfApp1.dll
 D:\project\lang\c++ proj\vs\wpf\WpfApp1 — копия\WpfApp1\bin\Debug\net7.0-windows\MathNet.Numerics.dll
 D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\WpfApp1.csproj.AssemblyReference.cache
-D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\Styles\ButtonStyles.baml
 D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\Styles\TextBoxStyles.baml
 D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\BasicCalculator.g.cs
 D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\MainWindow.g.cs
@@ -66,3 +65,6 @@ D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\WpfApp1
 D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\WpfApp1.csproj.Up2Date
 D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\WpfApp1.genruntimeconfig.cache
 D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\ref\WpfApp1.dll
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\Themes\DarkTheme.baml
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\Themes\LightTheme.baml
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\Styles\ButtonStyles.baml

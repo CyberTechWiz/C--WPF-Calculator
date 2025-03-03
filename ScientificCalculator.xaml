@@ -10,7 +10,7 @@
 
     <Grid>
         <!-- Сетка для кнопок -->
-        <Grid x:Name="buttonsGrid" Background="#FFE5E5E5">
+        <Grid x:Name="buttonsGrid">
             <Grid.RowDefinitions>
                 <RowDefinition Height="160"/>
                 <RowDefinition Height="*"/>
@@ -34,7 +34,7 @@
                      IsReadOnlyCaretVisible="False" Style="{StaticResource NoFocusBorderTextBoxStyle}"
                      MinWidth="320" TextAlignment="Right" VerticalAlignment="Center" Text="0" FontSize="36"
                      Margin="-10,0,10,0" Background="{x:Null}" BorderBrush="{x:Null}" Height="48" 
-                     SelectionBrush="{x:Null}" SelectionTextBrush="{x:Null}"/>
+                     SelectionBrush="{x:Null}" SelectionTextBrush="{x:Null}" Foreground="{DynamicResource DisplayBoxForeground}"/>
 
             <!-- Кнопки для калькулятора -->
             <!-- 1-ая строка кнопок -->

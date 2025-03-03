@@ -3,9 +3,9 @@
     <!-- Основной стиль для кнопок -->
     <Style x:Key="FlatButtonStyle" TargetType="Button">
         <!-- Цвет фона по умолчанию -->
-        <Setter Property="Background" Value="#ececec"/>
+        <Setter Property="Background" Value="{DynamicResource ButtonBackgroundBrush}"/>
         <!-- Цвет текста по умолчанию черный -->
-        <Setter Property="Foreground" Value="Black"/> 
+        <Setter Property="Foreground" Value="{DynamicResource ButtonForegroundBrush}"/> 
         <Setter Property="BorderThickness" Value="0"/>
         <Setter Property="Padding" Value="10,5"/>
         <Setter Property="Template">
@@ -31,35 +31,101 @@
         </Setter>
         <Style.Triggers>
             <Trigger Property="IsMouseOver" Value="True">
-                <Setter Property="Background" Value="#e5e5e5"/>
-                <Setter Property="Foreground" Value="Black"/>
+                <Setter Property="Background" Value="{DynamicResource ButtonHoverBackgroundBrush}"/>
+                <Setter Property="Foreground" Value="{DynamicResource ButtonForegroundBrush}"/>
             </Trigger>
             <Trigger Property="IsPressed" Value="True">
-                <Setter Property="Background" Value="#e1e1e1"/>
-                <Setter Property="Foreground" Value="#7e7e7e"/>
+                <Setter Property="Background" Value="{DynamicResource ButtonPressedBackgroundBrush}"/>
+                <Setter Property="Foreground" Value="{DynamicResource ButtonPressedForegroundBrush}"/>
             </Trigger>
         </Style.Triggers>
     </Style>
 
     <!-- Светлый стиль для цифр, основанный на FlatButtonStyle -->
     <Style x:Key="LightFlatButtonStyle" TargetType="Button" BasedOn="{StaticResource FlatButtonStyle}">
-        <Setter Property="Background" Value="#f9f9f9"/>
+        <Setter Property="Background" Value="{DynamicResource LightButtonBackgroundBrush}"/>
         <!-- Более светлый цвет -->
         <Style.Triggers>
             <Trigger Property="IsMouseOver" Value="True">
-                <Setter Property="Background" Value="#f3f3f3"/>
+                <Setter Property="Background" Value="{DynamicResource LightButtonHoverBackgroundBrush}"/>
                 <!-- Цвет при наведении -->
             </Trigger>
             <Trigger Property="IsPressed" Value="True">
-                <Setter Property="Background" Value="#eeeeee"/>
+                <Setter Property="Background" Value="{DynamicResource LightButtonPressedBackgroundBrush}"/>
                 <!-- Цвет при нажатии -->
             </Trigger>
         </Style.Triggers>
     </Style>
 
-    <!-- ТЁмный стиль для цифр, основанный на FlatButtonStyle -->
+    <!-- ТЁмный стиль для sci и bas, основанный на FlatButtonStyle -->
     <Style x:Key="DarkFlatButtonStyle" TargetType="Button" BasedOn="{StaticResource FlatButtonStyle}">
-        <Setter Property="Background" Value="#FFC3C3C3"/>
+        <Setter Property="Background" Value="{DynamicResource DarkButtonBackgroundBrush}"/>
         <!-- Более темный цвет -->
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{DynamicResource DarkButtonHoverBackgroundBrush}"/>
+                <!-- Цвет при наведении -->
+            </Trigger>
+            <Trigger Property="IsPressed" Value="True">
+                <Setter Property="Background" Value="{DynamicResource DarkButtonPressedBackgroundBrush}"/>
+                <!-- Цвет при нажатии -->
+            </Trigger>
+        </Style.Triggers>
     </Style>
+
+
+
+
+    
+
+
+
+
+    <!-- Стиль для кнопок панели управления окном -->
+    <Style x:Key="TitleBarButtonStyle" TargetType="Button">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="Foreground" Value="{DynamicResource TitleBarForeground}" />
+        <Setter Property="BorderBrush" Value="Transparent" />
+        <Setter Property="Padding" Value="10,5" />
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="{TemplateBinding Background}" 
+                        BorderBrush="{TemplateBinding BorderBrush}" 
+                        BorderThickness="0">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Cursor" Value="Arrow" />
+        <Setter Property="HorizontalContentAlignment" Value="Center" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{DynamicResource TitleBarButtonStyleHoverBackgroundBrush}" />
+                <!-- Полупрозрачный черный -->
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    
+    <!-- Прозрачный стиль для кнопок из контекстного меню -->
+    <Style x:Key="ContextMenuTitleBarButtonStyle" TargetType="Button" BasedOn="{StaticResource TitleBarButtonStyle}">
+        <Setter Property="Background" Value="{DynamicResource ContextMenuButtonStyleHoverBackgroundBrush}"/>
+        <!-- Более темный цвет -->
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{DynamicResource TitleBarButtonStyleHoverBackgroundBrush}"/>
+                <!-- Цвет при наведении -->
+            </Trigger>
+            <Trigger Property="IsPressed" Value="True">
+                <Setter Property="Background" Value="{DynamicResource TitleBarButtonStyleHoverBackgroundBrush}"/>
+                <!-- Цвет при нажатии -->
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+
+
 </ResourceDictionary>

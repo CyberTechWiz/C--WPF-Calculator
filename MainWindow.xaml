@@ -6,14 +6,86 @@
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
         Title="Калькулятор" Height="560" Width="340" 
-        MinWidth="340" MinHeight="500">
+        MinWidth="340" MinHeight="500"
+        WindowStyle="None"       
+        FontFamily="pack://application:,,,/media/fonts/#Cera Pro Light"
+        AllowsTransparency="True">
+
+    <Window.Background>
+        <DynamicResource ResourceKey="BackgroundImage" />
+    </Window.Background>
 
     <Grid>
-        <!-- Обычный калькулятор -->
-        <local:BasicCalculator x:Name="BasicCalculator"/>
+        <!-- Кастомная панель заголовка -->
+        <Border Background="Transparent" Height="30" VerticalAlignment="Top" MouseLeftButtonDown="TitleBar_MouseLeftButtonDown">
+            <DockPanel LastChildFill="False">
+                <!-- Отключаем заполнение последнего элемента -->
 
-        <!-- Инженерный калькулятор -->
-        <local:ScientificCalculator x:Name="ScientificCalculator"/>
+                <!-- Дополнительная кнопка (Кнопка, которая будет открывать Popup) -->
+                <Button x:Name="MenuButton"
+                        Style="{DynamicResource TitleBarButtonStyle}" 
+                        FontSize="14" 
+                        Foreground="{DynamicResource TitleBarForeground}" 
+                        BorderThickness="0"                 
+                        DockPanel.Dock="Left" 
+                        Click="MenuButton_Click"                    
+                        Margin="8,-6,5,0" Width="27">
+                    <Button.Content>
+                        <Image Source="{DynamicResource GearIcon}" Width="47" Height="47"
+                               RenderOptions.BitmapScalingMode="HighQuality"/>
+                    </Button.Content>
+                </Button>
 
+                <!-- Кнопки управления окном -->
+                <StackPanel DockPanel.Dock="Right" Orientation="Horizontal">
+                    <Button x:Name="MinimizeButton" Content="─" FontSize="20"
+                            Style="{DynamicResource TitleBarButtonStyle}" Margin="0,-4,6,0"
+                            Click="MinimizeButton_Click" Width="20" />
+                    <Button x:Name="MaximizeButton" Content="□" FontSize="17"
+                            Style="{DynamicResource TitleBarButtonStyle}" Margin="0,0,6,0"
+                            Click="MaximizeButton_Click" Width="22" />
+                    <Button x:Name="CloseButton" Content="×" FontSize="26" 
+                            Style="{DynamicResource TitleBarButtonStyle}" Margin="0,-2,2,0"
+                            Click="CloseButton_Click" Width="22" RenderTransformOrigin="0.72,0.531" />
+                </StackPanel>
+
+                <!-- Заголовок окна -->
+                <TextBlock Text="Калькулятор" 
+                           Foreground="{DynamicResource TitleBarForeground}" 
+                           FontSize="19" 
+                           VerticalAlignment="Center" 
+                           Margin="6,0,10,0" 
+                           HorizontalAlignment="Left" />
+            </DockPanel>
+        </Border>
+
+        <!-- Основной контент -->
+        <Grid Margin="0,30,0,0">
+            <!-- Обычный калькулятор -->
+            <local:BasicCalculator x:Name="BasicCalculator"/>
+
+            <!-- Инженерный калькулятор -->
+            <local:ScientificCalculator x:Name="ScientificCalculator"/>
+        </Grid>
+
+
+
+        <!-- Popup с кнопками -->
+        <Popup x:Name="MenuPopup" PlacementTarget="{Binding ElementName=MenuButton}" Placement="Bottom" StaysOpen="False" AllowsTransparency="True">
+            <StackPanel Background="{DynamicResource ContextMenuButtonStyleHoverBackgroundBrush}" Width="150">
+                <Button x:Name="ChangeThemeButton" Content="Change Theme" Click="Change_Theme_Click" Margin="5" Style="{DynamicResource ContextMenuTitleBarButtonStyle}"/>
+                <Button Content="About" Click="About_Click" Margin="5" Style="{DynamicResource ContextMenuTitleBarButtonStyle}"/>
+            </StackPanel>
+        </Popup>
+
+        <!-- Popup для меню выбора темы -->
+        <Popup x:Name="ThemePopup" PlacementTarget="{Binding ElementName=ChangeThemeButton}" Placement="Right" StaysOpen="False" AllowsTransparency="True" >
+            <Border Padding="10">
+                <StackPanel Background="{DynamicResource ContextMenuButtonStyleHoverBackgroundBrush}" >
+                    <Button Content="Light Theme" Click="LightTheme_Click" Style="{DynamicResource ContextMenuTitleBarButtonStyle}" Margin="5" />
+                    <Button Content="Dark Theme" Click="DarkTheme_Click" Style="{DynamicResource ContextMenuTitleBarButtonStyle}" Margin="5" />
+                </StackPanel>
+            </Border>
+        </Popup>
     </Grid>
 </Window>

@@ -8,8 +8,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="media\fonts\Cera Pro Light.otf" />
-    <None Remove="media\fonts\Cera Pro Regular.otf" />
+    <None Remove="Media\backgrounds\DarkBackground.png" />
+    <None Remove="Media\backgrounds\LightBackground.png" />
+    <None Remove="Media\fonts\Cera Pro Light.otf" />
+    <None Remove="Media\fonts\Cera Pro Regular.otf" />
+    <None Remove="Media\Images\black_gear.png" />
+    <None Remove="Media\Images\white_gear.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -18,14 +22,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Media\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Resource Include="media\fonts\Cera Pro Light.otf">
+    <Resource Include="Media\backgrounds\DarkBackground.png" />
+    <Resource Include="Media\backgrounds\LightBackground.png" />
+    <Resource Include="Media\fonts\Cera Pro Light.otf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="media\fonts\Cera Pro Regular.otf" />
+    <Resource Include="Media\fonts\Cera Pro Regular.otf" />
+    <Resource Include="Media\Images\black_gear.png" />
+    <Resource Include="Media\Images\white_gear.png" />
   </ItemGroup>
 
 </Project>

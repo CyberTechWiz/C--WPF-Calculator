@@ -1,0 +1,63 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ImageBrush x:Key="BackgroundImage" ImageSource="/Media/backgrounds/DarkBackground.png" Stretch="UniformToFill" />
+    <!-- Цвет панели заголовка для светлой темы -->
+    <SolidColorBrush x:Key="TitleBarBackground" Color="#2e2e2e" />
+    <SolidColorBrush x:Key="TitleBarForeground" Color="white" />
+
+    <!-- Цвета для Стиль для кнопок панели управления окно -->
+    <Color x:Key="TitleBarButtonStyleHoverBackgroundColor1">#10ffffff</Color>
+    <Color x:Key="TitleBarButtonStyleHoverBackgroundColor2">#20ffffff</Color>
+    <Color x:Key="TitleBarButtonStyleHoverBackgroundColor3">#30ffffff</Color>
+
+    <SolidColorBrush x:Key="ContextMenuButtonStyleHoverBackgroundBrush" Color="{DynamicResource TitleBarButtonStyleHoverBackgroundColor1}" />
+    <SolidColorBrush x:Key="TitleBarButtonStyleHoverBackgroundBrush" Color="{DynamicResource TitleBarButtonStyleHoverBackgroundColor2}" />
+
+
+
+    <!-- Изображение для кнопки меню для светлой темы -->
+    <BitmapImage x:Key="GearIcon" UriSource="/Media/Images/white_gear.png"/>
+
+    
+    <!-- Цвет текста диспеля -->
+    <SolidColorBrush x:Key="DisplayBoxForeground" Color="white" />
+
+
+
+
+
+
+
+    <!-- Цвета для кнопок -->
+    <Color x:Key="ButtonBackgroundColor">#343434</Color>
+    <Color x:Key="ButtonHoverBackgroundColor">#424242</Color>
+    <Color x:Key="ButtonPressedBackgroundColor">#343434</Color>
+    <Color x:Key="ButtonForegroundColor">White</Color>
+    <Color x:Key="ButtonPressedForegroundColor">#7e7e7e</Color>
+
+    <!-- Цвета для Светлый стиль для цифр -->
+    <Color x:Key="LightButtonBackgroundColor">#424242</Color>
+    <Color x:Key="LightButtonHoverBackgroundColor">#343434</Color>
+    <Color x:Key="LightButtonPressedBackgroundColor">#2e2e2e</Color>
+
+    <!-- Цвета для ТЁмный стиль для sci и bas -->
+    <Color x:Key="DarkButtonBackgroundColor">#272727</Color>
+    <Color x:Key="DarkButtonHoverBackgroundColor">#222222</Color>
+    <Color x:Key="DarkButtonPressedBackgroundColor">#1e1e1e</Color>
+
+    <!-- Кисти для кнопок -->
+    <SolidColorBrush x:Key="ButtonBackgroundBrush" Color="{DynamicResource ButtonBackgroundColor}" />
+    <SolidColorBrush x:Key="ButtonHoverBackgroundBrush" Color="{DynamicResource ButtonHoverBackgroundColor}" />
+    <SolidColorBrush x:Key="ButtonPressedBackgroundBrush" Color="{DynamicResource ButtonPressedBackgroundColor}" />
+    <SolidColorBrush x:Key="ButtonForegroundBrush" Color="{DynamicResource ButtonForegroundColor}" />
+    <SolidColorBrush x:Key="ButtonPressedForegroundBrush" Color="{DynamicResource ButtonPressedForegroundColor}" />
+
+    <SolidColorBrush x:Key="LightButtonBackgroundBrush" Color="{DynamicResource LightButtonBackgroundColor}" />
+    <SolidColorBrush x:Key="LightButtonHoverBackgroundBrush" Color="{DynamicResource LightButtonHoverBackgroundColor}" />
+    <SolidColorBrush x:Key="LightButtonPressedBackgroundBrush" Color="{DynamicResource LightButtonPressedBackgroundColor}" />
+
+    <SolidColorBrush x:Key="DarkButtonBackgroundBrush" Color="{DynamicResource DarkButtonBackgroundColor}" />
+    <SolidColorBrush x:Key="DarkButtonHoverBackgroundBrush" Color="{DynamicResource DarkButtonHoverBackgroundColor}" />
+    <SolidColorBrush x:Key="DarkButtonPressedBackgroundBrush" Color="{DynamicResource DarkButtonPressedBackgroundColor}" />
+
+</ResourceDictionary>

@@ -9,6 +9,9 @@
                 <!-- Подключаем файл ресурсов -->
                 <ResourceDictionary Source="/Styles/ButtonStyles.xaml"/>
                 <ResourceDictionary Source="/Styles/TextBoxStyles.xaml"/>
+                
+                <ResourceDictionary Source="/Themes/LightTheme.xaml" />
+                <ResourceDictionary Source="/Themes/DarkTheme.xaml" />
             </ResourceDictionary.MergedDictionaries>
 
             <Storyboard x:Key="FadeIn">

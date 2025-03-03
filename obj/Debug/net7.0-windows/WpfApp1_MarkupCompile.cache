@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\App.xaml
-5-1456313062
+71992564893
 
 5-1685660942
 201842524525
-BasicCalculator.xaml;MainWindow.xaml;ScientificCalculator.xaml;Styles\ButtonStyles.xaml;Styles\TextBoxStyles.xaml;
+BasicCalculator.xaml;MainWindow.xaml;ScientificCalculator.xaml;Styles\ButtonStyles.xaml;Styles\TextBoxStyles.xaml;Themes\DarkTheme.xaml;Themes\LightTheme.xaml;
 
 False
 
