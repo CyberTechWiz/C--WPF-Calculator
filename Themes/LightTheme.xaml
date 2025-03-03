@@ -21,7 +21,7 @@
 
     <!-- Цвет текста диспеля -->
     <SolidColorBrush x:Key="DisplayBoxForeground" Color="Black" />
-
+    <SolidColorBrush x:Key="DisplayBoxBackground" Color="#00FFFFFF"/>
 
 
 
@@ -59,5 +59,13 @@
     <SolidColorBrush x:Key="DarkButtonBackgroundBrush" Color="{DynamicResource DarkButtonBackgroundColor}" />
     <SolidColorBrush x:Key="DarkButtonHoverBackgroundBrush" Color="{DynamicResource DarkButtonHoverBackgroundColor}" />
     <SolidColorBrush x:Key="DarkButtonPressedBackgroundBrush" Color="{DynamicResource DarkButtonPressedBackgroundColor}" />
-    
+
+    <SolidColorBrush x:Key="OperationButtonBackgroundBrush" Color="{DynamicResource ButtonBackgroundColor}"/>
+    <SolidColorBrush x:Key="OperationButtonHoverBackgroundBrush" Color="{DynamicResource ButtonHoverBackgroundColor}"/>
+    <SolidColorBrush x:Key="OperationButtonPressedBackgroundBrush" Color="{DynamicResource ButtonPressedBackgroundColor}"/>
+
+    <SolidColorBrush x:Key="EqualButtonBackgroundBrush" Color="{DynamicResource ButtonBackgroundColor}"/>
+    <SolidColorBrush x:Key="EqualButtonHoverBackgroundBrush" Color="{DynamicResource ButtonHoverBackgroundColor}"/>
+    <SolidColorBrush x:Key="EqualButtonPressedBackgroundBrush" Color="{DynamicResource ButtonPressedBackgroundColor}"/>
+
 </ResourceDictionary>

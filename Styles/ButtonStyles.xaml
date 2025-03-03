@@ -73,10 +73,47 @@
         </Style.Triggers>
     </Style>
 
+    <!-- Особый стиль для операций -->
+    <Style x:Key="OperationFlatButtonStyle" TargetType="Button" BasedOn="{StaticResource FlatButtonStyle}">
+        <Setter Property="Background" Value="{DynamicResource OperationButtonBackgroundBrush}"/>
+        <!-- Более светлый цвет -->
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{DynamicResource OperationButtonHoverBackgroundBrush}"/>
+                <!-- Цвет при наведении -->
+            </Trigger>
+            <Trigger Property="IsPressed" Value="True">
+                <Setter Property="Background" Value="{DynamicResource OperationButtonPressedBackgroundBrush}"/>
+                <!-- Цвет при нажатии -->
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <!-- Особый стиль для равно -->
+    <Style x:Key="EqualFlatButtonStyle" TargetType="Button" BasedOn="{StaticResource FlatButtonStyle}">
+        <Setter Property="Background" Value="{DynamicResource EqualButtonBackgroundBrush}"/>
+        <!-- Более светлый цвет -->
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{DynamicResource EqualButtonHoverBackgroundBrush}"/>
+                <!-- Цвет при наведении -->
+            </Trigger>
+            <Trigger Property="IsPressed" Value="True">
+                <Setter Property="Background" Value="{DynamicResource EqualButtonPressedBackgroundBrush}"/>
+                <!-- Цвет при нажатии -->
+            </Trigger>
+        </Style.Triggers>
+    </Style>
 
 
 
-    
+
+
+
+
+
+
+
 
 
 

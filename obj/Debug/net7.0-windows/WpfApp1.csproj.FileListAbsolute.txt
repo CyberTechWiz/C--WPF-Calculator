@@ -68,3 +68,4 @@ D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\ref\Wpf
 D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\Themes\DarkTheme.baml
 D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\Themes\LightTheme.baml
 D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\Styles\ButtonStyles.baml
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\Themes\DarkLavenderTheme.baml

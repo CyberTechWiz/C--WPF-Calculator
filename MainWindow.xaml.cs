@@ -27,7 +27,7 @@ namespace WpfApp1
         {
             InitializeComponent();
 
-            ThemeManager.ApplyTheme("LightTheme");
+            ThemeManager.ApplyTheme("DarkLavenderTheme");
 
             // Подписываемся на событие SwitchToScientific
             BasicCalculator.SwitchToScientific += BasicCalculator_SwitchToScientific;
@@ -170,6 +170,13 @@ namespace WpfApp1
         {
             // Применяем темную тему
             ThemeManager.ApplyTheme("DarkTheme");
+            ThemePopup.IsOpen = false; // Закрыть Popup после выбора
+            MenuPopup.IsOpen = false; // Закрыть Popup после выбора
+        }
+        private void DarkLavenderTheme_Click(object sender, RoutedEventArgs e)
+        {
+            // Применяем темную тему
+            ThemeManager.ApplyTheme("DarkLavenderTheme");
             ThemePopup.IsOpen = false; // Закрыть Popup после выбора
             MenuPopup.IsOpen = false; // Закрыть Popup после выбора
         }
