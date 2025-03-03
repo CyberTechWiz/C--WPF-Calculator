@@ -85,6 +85,8 @@
                     <Button Content="Light" Click="LightTheme_Click" Style="{DynamicResource ContextMenuTitleBarButtonStyle}" Margin="5" />
                     <Button Content="Dark" Click="DarkTheme_Click" Style="{DynamicResource ContextMenuTitleBarButtonStyle}" Margin="5" />
                     <Button Content="Dark Lavender" Click="DarkLavenderTheme_Click" Style="{DynamicResource ContextMenuTitleBarButtonStyle}" Margin="5" />
+                    <Button Content="Violet Sunrise" Click="VioletSunriseTheme_Click" Style="{DynamicResource ContextMenuTitleBarButtonStyle}" Margin="5" />
+                    <Button Content="Northern Lights" Click="NorthernLightsTheme_Click" Style="{DynamicResource ContextMenuTitleBarButtonStyle}" Margin="5" />
                 </StackPanel>
             </Border>
         </Popup>

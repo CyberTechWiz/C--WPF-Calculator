@@ -64,8 +64,10 @@
     <SolidColorBrush x:Key="OperationButtonBackgroundBrush" Color="{DynamicResource ButtonBackgroundColor}"/>
     <SolidColorBrush x:Key="OperationButtonHoverBackgroundBrush" Color="{DynamicResource ButtonHoverBackgroundColor}"/>
     <SolidColorBrush x:Key="OperationButtonPressedBackgroundBrush" Color="{DynamicResource ButtonPressedBackgroundColor}"/>
+    <SolidColorBrush x:Key="OperationButtonForegroundBrush" Color="{DynamicResource ButtonForegroundColor}" />
 
     <SolidColorBrush x:Key="EqualButtonBackgroundBrush" Color="{DynamicResource ButtonBackgroundColor}"/>
     <SolidColorBrush x:Key="EqualButtonHoverBackgroundBrush" Color="{DynamicResource ButtonHoverBackgroundColor}"/>
     <SolidColorBrush x:Key="EqualButtonPressedBackgroundBrush" Color="{DynamicResource ButtonPressedBackgroundColor}"/>
+    <SolidColorBrush x:Key="EqualButtonForegroundBrush" Color="{DynamicResource ButtonForegroundColor}" />
 </ResourceDictionary>

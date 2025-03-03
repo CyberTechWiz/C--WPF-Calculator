@@ -11,11 +11,19 @@
     <None Remove="Media\backgrounds\DarkBackground.png" />
     <None Remove="Media\backgrounds\DarkLavenderBackground.png" />
     <None Remove="Media\backgrounds\LightBackground.png" />
+    <None Remove="Media\backgrounds\NorthernLightsBackground.png" />
+    <None Remove="Media\backgrounds\VioletSunriseBackground.png" />
     <None Remove="Media\fonts\Cera Pro Light.otf" />
     <None Remove="Media\fonts\Cera Pro Regular.otf" />
     <None Remove="Media\Images\black_gear.png" />
     <None Remove="Media\Images\lavender.png" />
+    <None Remove="Media\Images\NorthernLights_gear.png" />
+    <None Remove="Media\Images\Violet_cloud.png" />
     <None Remove="Media\Images\white_gear.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Media\Images\NorthernLights_gear.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -27,12 +35,15 @@
     <Resource Include="Media\backgrounds\DarkBackground.png" />
     <Resource Include="Media\backgrounds\DarkLavenderBackground.png" />
     <Resource Include="Media\backgrounds\LightBackground.png" />
+    <Resource Include="Media\backgrounds\NorthernLightsBackground.png" />
+    <Resource Include="Media\backgrounds\VioletSunriseBackground.png" />
     <Resource Include="Media\fonts\Cera Pro Light.otf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Media\fonts\Cera Pro Regular.otf" />
     <Resource Include="Media\Images\black_gear.png" />
     <Resource Include="Media\Images\lavender.png" />
+    <Resource Include="Media\Images\Violet_cloud.png" />
     <Resource Include="Media\Images\white_gear.png" />
   </ItemGroup>
 

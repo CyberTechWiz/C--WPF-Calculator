@@ -76,14 +76,17 @@
     <!-- Особый стиль для операций -->
     <Style x:Key="OperationFlatButtonStyle" TargetType="Button" BasedOn="{StaticResource FlatButtonStyle}">
         <Setter Property="Background" Value="{DynamicResource OperationButtonBackgroundBrush}"/>
+        <Setter Property="Foreground" Value="{DynamicResource OperationButtonForegroundBrush}"/>
         <!-- Более светлый цвет -->
         <Style.Triggers>
             <Trigger Property="IsMouseOver" Value="True">
                 <Setter Property="Background" Value="{DynamicResource OperationButtonHoverBackgroundBrush}"/>
+                <Setter Property="Foreground" Value="{DynamicResource ButtonForegroundBrush}"/>
                 <!-- Цвет при наведении -->
             </Trigger>
             <Trigger Property="IsPressed" Value="True">
                 <Setter Property="Background" Value="{DynamicResource OperationButtonPressedBackgroundBrush}"/>
+                <Setter Property="Foreground" Value="{DynamicResource ButtonPressedForegroundBrush}"/>
                 <!-- Цвет при нажатии -->
             </Trigger>
         </Style.Triggers>
@@ -92,14 +95,17 @@
     <!-- Особый стиль для равно -->
     <Style x:Key="EqualFlatButtonStyle" TargetType="Button" BasedOn="{StaticResource FlatButtonStyle}">
         <Setter Property="Background" Value="{DynamicResource EqualButtonBackgroundBrush}"/>
+        <Setter Property="Foreground" Value="{DynamicResource EqualButtonForegroundBrush}"/>
         <!-- Более светлый цвет -->
         <Style.Triggers>
             <Trigger Property="IsMouseOver" Value="True">
                 <Setter Property="Background" Value="{DynamicResource EqualButtonHoverBackgroundBrush}"/>
+                <Setter Property="Foreground" Value="{DynamicResource ButtonForegroundBrush}"/>
                 <!-- Цвет при наведении -->
             </Trigger>
             <Trigger Property="IsPressed" Value="True">
                 <Setter Property="Background" Value="{DynamicResource EqualButtonPressedBackgroundBrush}"/>
+                <Setter Property="Foreground" Value="{DynamicResource ButtonPressedForegroundBrush}"/>
                 <!-- Цвет при нажатии -->
             </Trigger>
         </Style.Triggers>

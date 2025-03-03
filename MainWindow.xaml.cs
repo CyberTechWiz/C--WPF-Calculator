@@ -27,7 +27,7 @@ namespace WpfApp1
         {
             InitializeComponent();
 
-            ThemeManager.ApplyTheme("DarkLavenderTheme");
+            ThemeManager.ApplyTheme("NorthernLightsTheme");
 
             // Подписываемся на событие SwitchToScientific
             BasicCalculator.SwitchToScientific += BasicCalculator_SwitchToScientific;
@@ -180,6 +180,19 @@ namespace WpfApp1
             ThemePopup.IsOpen = false; // Закрыть Popup после выбора
             MenuPopup.IsOpen = false; // Закрыть Popup после выбора
         }
-
+        private void VioletSunriseTheme_Click(object sender, RoutedEventArgs e)
+        {
+            // Применяем темную тему
+            ThemeManager.ApplyTheme("VioletSunriseTheme");
+            ThemePopup.IsOpen = false; // Закрыть Popup после выбора
+            MenuPopup.IsOpen = false; // Закрыть Popup после выбора
+        }
+        private void NorthernLightsTheme_Click(object sender, RoutedEventArgs e)
+        {
+            // Применяем темную тему
+            ThemeManager.ApplyTheme("NorthernLightsTheme");
+            ThemePopup.IsOpen = false; // Закрыть Popup после выбора
+            MenuPopup.IsOpen = false; // Закрыть Popup после выбора
+        }
     }
 }

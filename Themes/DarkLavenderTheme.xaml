@@ -30,15 +30,15 @@
 
     <!-- Цвета для кнопок -->
     <Color x:Key="ButtonBackgroundColor">#171b21</Color>
-    <Color x:Key="ButtonHoverBackgroundColor">#1b2127</Color>
-    <Color x:Key="ButtonPressedBackgroundColor">#15191e</Color>
+    <Color x:Key="ButtonHoverBackgroundColor">#272d37</Color>
+    <Color x:Key="ButtonPressedBackgroundColor">#171b21</Color>
     <Color x:Key="ButtonForegroundColor">#d5d59c</Color>
     <Color x:Key="ButtonPressedForegroundColor">#bdb1fb</Color>
 
     <!-- Цвета для Светлый стиль для цифр -->
     <Color x:Key="LightButtonBackgroundColor">#232932</Color>
-    <Color x:Key="LightButtonHoverBackgroundColor">#1b2127</Color>
-    <Color x:Key="LightButtonPressedBackgroundColor">#15191e</Color>
+    <Color x:Key="LightButtonHoverBackgroundColor">#2f3744</Color>
+    <Color x:Key="LightButtonPressedBackgroundColor">#232932</Color>
 
     <!-- Цвета для ТЁмный стиль для sci и bas -->
     <Color x:Key="DarkButtonBackgroundColor">#272727</Color>
@@ -47,12 +47,12 @@
 
     <!-- Особенный цвет для операций -->
     <Color x:Key="OperationButtonBackgroundColor">#7a9663</Color>
-    <Color x:Key="OperationButtonHoverBackgroundColor">#566842</Color>
+    <Color x:Key="OperationButtonHoverBackgroundColor">#8eaf73</Color>
     <Color x:Key="OperationButtonPressedBackgroundColor">#7a9663</Color>
 
     <!-- Особенный цвет для = -->
     <Color x:Key="EqualButtonBackgroundColor">#766ca8</Color>
-    <Color x:Key="EqualButtonHoverBackgroundColor">#5b4f94</Color>
+    <Color x:Key="EqualButtonHoverBackgroundColor">#8479bb</Color>
     <Color x:Key="EqualButtonPressedBackgroundColor">#766ca8</Color>
 
 
@@ -74,8 +74,11 @@
     <SolidColorBrush x:Key="OperationButtonBackgroundBrush" Color="{DynamicResource OperationButtonBackgroundColor}"   Opacity="0.8" />
     <SolidColorBrush x:Key="OperationButtonHoverBackgroundBrush" Color="{DynamicResource OperationButtonHoverBackgroundColor}"  Opacity="0.8" />
     <SolidColorBrush x:Key="OperationButtonPressedBackgroundBrush" Color="{DynamicResource OperationButtonPressedBackgroundColor}"  Opacity="0.8" />
+    <SolidColorBrush x:Key="OperationButtonForegroundBrush" Color="{DynamicResource ButtonForegroundColor}" />
 
     <SolidColorBrush x:Key="EqualButtonBackgroundBrush" Color="{DynamicResource EqualButtonBackgroundColor}"  Opacity="0.8" />
     <SolidColorBrush x:Key="EqualButtonHoverBackgroundBrush" Color="{DynamicResource EqualButtonHoverBackgroundColor}"  Opacity="0.8" />
     <SolidColorBrush x:Key="EqualButtonPressedBackgroundBrush" Color="{DynamicResource EqualButtonPressedBackgroundColor}"  Opacity="0.8" />
+    <SolidColorBrush x:Key="EqualButtonForegroundBrush" Color="{DynamicResource ButtonForegroundColor}" />
+    
 </ResourceDictionary>
