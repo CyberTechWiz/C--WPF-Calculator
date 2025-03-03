@@ -1,0 +1,20 @@
+﻿WpfApp1
+1.0.0.0
+
+winexe
+C#
+.cs
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\
+WpfApp1
+none
+false
+TRACE;RELEASE;NET;NET7_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\App.xaml
+103870128
+
+91830661727
+201842524525
+BasicCalculator.xaml;MainWindow.xaml;ScientificCalculator.xaml;Styles\ButtonStyles.xaml;Styles\TextBoxStyles.xaml;Themes\DarkLavenderTheme.xaml;Themes\DarkTheme.xaml;Themes\LightTheme.xaml;Themes\NorthernLightsTheme.xaml;Themes\VioletSunriseTheme.xaml;
+
+False
+

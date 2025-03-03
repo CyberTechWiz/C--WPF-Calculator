@@ -27,7 +27,13 @@ namespace WpfApp1
         {
             InitializeComponent();
 
-            ThemeManager.ApplyTheme("NorthernLightsTheme");
+            // Восстанавливаем выбранную тему
+            string savedTheme = Properties.Settings.Default.SelectedTheme;
+            if (!string.IsNullOrEmpty(savedTheme))
+            {
+                ThemeManager.ApplyTheme(savedTheme);
+            }
+
 
             // Подписываемся на событие SwitchToScientific
             BasicCalculator.SwitchToScientific += BasicCalculator_SwitchToScientific;
@@ -142,19 +148,30 @@ namespace WpfApp1
             /// <param name="themeName">Имя темы (например, "LightTheme").</param>
             public static void ApplyTheme(string themeName)
             {
-                // Формируем путь к файлу темы
-                var themeUri = new Uri($"Themes/{themeName}.xaml", UriKind.Relative);
+                try
+                {
+                    // Формируем путь к файлу темы
+                    var themeUri = new Uri($"Themes/{themeName}.xaml", UriKind.Relative);
 
-                // Очищаем текущие ресурсы
-                Application.Current.Resources.MergedDictionaries.Clear();
+                    // Очищаем текущие ресурсы
+                    Application.Current.Resources.MergedDictionaries.Clear();
 
-                // Загружаем новую тему
-                var themeDictionary = new ResourceDictionary { Source = themeUri };
-                Application.Current.Resources.MergedDictionaries.Add(themeDictionary);
+                    // Загружаем новую тему
+                    var themeDictionary = new ResourceDictionary { Source = themeUri };
+                    Application.Current.Resources.MergedDictionaries.Add(themeDictionary);
 
-                // Загружаем стили кнопок
-                var buttonStylesUri = new Uri("Styles/ButtonStyles.xaml", UriKind.Relative);
-                Application.Current.Resources.MergedDictionaries.Add(new ResourceDictionary { Source = buttonStylesUri });
+                    // Загружаем стили кнопок
+                    var buttonStylesUri = new Uri("Styles/ButtonStyles.xaml", UriKind.Relative);
+                    Application.Current.Resources.MergedDictionaries.Add(new ResourceDictionary { Source = buttonStylesUri });
+
+                    // Сохраняем выбор темы
+                    Properties.Settings.Default.SelectedTheme = themeName;
+                    Properties.Settings.Default.Save();  // Сохраняем настройки
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error loading the theme {themeName}: {ex.Message}");
+                }
             }
         }
 
@@ -172,6 +189,7 @@ namespace WpfApp1
             ThemeManager.ApplyTheme("DarkTheme");
             ThemePopup.IsOpen = false; // Закрыть Popup после выбора
             MenuPopup.IsOpen = false; // Закрыть Popup после выбора
+           
         }
         private void DarkLavenderTheme_Click(object sender, RoutedEventArgs e)
         {
@@ -179,6 +197,7 @@ namespace WpfApp1
             ThemeManager.ApplyTheme("DarkLavenderTheme");
             ThemePopup.IsOpen = false; // Закрыть Popup после выбора
             MenuPopup.IsOpen = false; // Закрыть Popup после выбора
+            
         }
         private void VioletSunriseTheme_Click(object sender, RoutedEventArgs e)
         {
@@ -186,6 +205,7 @@ namespace WpfApp1
             ThemeManager.ApplyTheme("VioletSunriseTheme");
             ThemePopup.IsOpen = false; // Закрыть Popup после выбора
             MenuPopup.IsOpen = false; // Закрыть Popup после выбора
+            
         }
         private void NorthernLightsTheme_Click(object sender, RoutedEventArgs e)
         {
@@ -193,6 +213,7 @@ namespace WpfApp1
             ThemeManager.ApplyTheme("NorthernLightsTheme");
             ThemePopup.IsOpen = false; // Закрыть Popup после выбора
             MenuPopup.IsOpen = false; // Закрыть Popup после выбора
+            
         }
     }
 }

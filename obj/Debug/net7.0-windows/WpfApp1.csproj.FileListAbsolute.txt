@@ -71,3 +71,4 @@ D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\Styles\
 D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\Themes\DarkLavenderTheme.baml
 D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\Themes\VioletSunriseTheme.baml
 D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Debug\net7.0-windows\Themes\NorthernLightsTheme.baml
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\bin\Debug\net7.0-windows\WpfApp1.dll.config
