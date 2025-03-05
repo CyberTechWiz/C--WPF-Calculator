@@ -1,0 +1,63 @@
+﻿<Window x:Class="WpfApp1.AboutWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="About" Height="550" Width="650"
+        WindowStartupLocation="CenterScreen" 
+        FontFamily="pack://application:,,,/media/fonts/#Cera Pro Light"
+        ResizeMode="NoResize" 
+        AllowsTransparency="True"
+        WindowStyle="None"
+        Background="Transparent">
+    <!-- Запрет изменения размера окна -->
+    <Grid>
+        <Border Background="{DynamicResource AboutWindowBackground}" CornerRadius="10" 
+                VerticalAlignment="Center" HorizontalAlignment="Center"
+                Padding="40" Height="480">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" ShadowDepth="0" Color="Black"/>
+            </Border.Effect>
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <!-- Изображение (например, логотип) -->
+            <Image Source="/Media/Images/calc.png" Width="64" Height="64" Margin="0,0,0,10"/>
+
+            <!-- Информация об авторе -->
+                <TextBlock Text="Author: CyberTechWiz" FontSize="26" FontWeight="Bold" Margin="0,0,0,0" Foreground="{DynamicResource DisplayBoxForeground}"/>
+                <TextBlock FontSize="18" FontWeight="Bold" Margin="0,0,0,10">
+                    <Hyperlink NavigateUri="https://github.com/CyberTechWiz" RequestNavigate="Hyperlink_RequestNavigate" TextDecorations="None">
+                        <Hyperlink.Style>
+            <Style TargetType="Hyperlink">
+                <!-- Цвет по умолчанию -->
+                <Setter Property="Foreground" Value="{DynamicResource HyperlinkColor}"/>
+                <Setter Property="TextDecorations" Value="None"/>
+
+                <!-- Цвет при наведении -->
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Foreground" Value="{DynamicResource HyperlinkColor2}"/> <!-- Цвет при наведении -->
+                    </Trigger>
+
+                    
+                </Style.Triggers>
+            </Style>
+        </Hyperlink.Style>
+                    https://github.com/CyberTechWiz
+                </Hyperlink>
+                </TextBlock>
+
+                <!-- Инструкция -->
+                <TextBlock Text="Instructions:" FontSize="24" FontWeight="Bold" Margin="0,10,0,5" Foreground="{DynamicResource DisplayBoxForeground}"/>
+                <TextBlock Text='1. Overflow. If you need to count large numbers,' FontSize="22" Foreground="{DynamicResource DisplayBoxForeground}"/>
+                <TextBlock Text='multiply one of them by "1,0" or add ",0" to the'  FontSize="22" Foreground="{DynamicResource DisplayBoxForeground}"/>
+                <TextBlock Text='end of the number.'  FontSize="22" Foreground="{DynamicResource DisplayBoxForeground}"/>
+                <TextBlock Text='2. Esc- Clear the screen (C)'  FontSize="22" Foreground="{DynamicResource DisplayBoxForeground}"/>
+
+            <!-- Кнопка "Закрыть" -->
+                <Button Content="Закрыть" Width="100" Margin="0,20,0,0" Click="CloseButton_Click" Style="{DynamicResource EqualFlatButtonStyle}" FontSize="16"/>
+        </StackPanel>
+        </Border>
+    </Grid>
+</Window>

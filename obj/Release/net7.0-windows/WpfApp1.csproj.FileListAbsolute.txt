@@ -1,9 +1,3 @@
-D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\bin\Release\net7.0-windows\WpfApp1.exe
-D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\bin\Release\net7.0-windows\WpfApp1.dll.config
-D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\bin\Release\net7.0-windows\WpfApp1.deps.json
-D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\bin\Release\net7.0-windows\WpfApp1.runtimeconfig.json
-D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\bin\Release\net7.0-windows\WpfApp1.dll
-D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\bin\Release\net7.0-windows\WpfApp1.pdb
 D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\bin\Release\net7.0-windows\Antlr4.Runtime.Standard.dll
 D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\bin\Release\net7.0-windows\NCalc.dll
 D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\bin\Release\net7.0-windows\MathNet.Numerics.dll
@@ -20,21 +14,28 @@ D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\MainW
 D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\ScientificCalculator.g.cs
 D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\App.g.cs
 D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\GeneratedInternalTypeHelper.g.cs
-D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\WpfApp1_MarkupCompile.cache
-D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\WpfApp1_MarkupCompile.lref
 D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\App.baml
 D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\BasicCalculator.baml
 D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\MainWindow.baml
 D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\ScientificCalculator.baml
-D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\WpfApp1.g.resources
 D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\WpfApp1.GeneratedMSBuildEditorConfig.editorconfig
 D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\WpfApp1.AssemblyInfoInputs.cache
 D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\WpfApp1.AssemblyInfo.cs
 D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\WpfApp1.csproj.CoreCompileInputs.cache
 D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\WpfApp1.sourcelink.json
 D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\WpfApp1.csproj.Up2Date
-D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\WpfApp1.dll
-D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\refint\WpfApp1.dll
-D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\WpfApp1.pdb
 D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\WpfApp1.genruntimeconfig.cache
-D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\ref\WpfApp1.dll
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\Calc 1.0_Content.g.cs
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\Calc 1.0_MarkupCompile.cache
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\Calc 1.0_MarkupCompile.lref
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\bin\Release\net7.0-windows\Calc 1.0.exe
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\bin\Release\net7.0-windows\Calc 1.0.dll.config
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\bin\Release\net7.0-windows\Calc 1.0.deps.json
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\bin\Release\net7.0-windows\Calc 1.0.runtimeconfig.json
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\bin\Release\net7.0-windows\Calc 1.0.dll
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\bin\Release\net7.0-windows\Calc 1.0.pdb
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\Calc 1.0.g.resources
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\Calc 1.0.dll
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\refint\Calc 1.0.dll
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\Calc 1.0.pdb
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\ref\Calc 1.0.dll

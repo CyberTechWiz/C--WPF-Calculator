@@ -13,6 +13,7 @@
 
 4. При вводе корня произвольной степени закрывающую скобку можно не ставить.
 
+5. Чтобы сменить тему надо нажать на шестеренку в левом углу на верхней панели управления.
 
 # WpfApp1
  The program uses the following libraries:
@@ -27,3 +28,5 @@ Instructions:
 3. You can type from the keyboard. Esc- Clear the screen (C).
 
 4. When entering a root of any degree, you don't need to put a closing parenthesis.
+
+5. To change the theme, click on the gear in the left corner of the upper control panel.

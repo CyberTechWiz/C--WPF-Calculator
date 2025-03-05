@@ -21,8 +21,13 @@
 
     <!-- Цвет текста диспеля -->
     <SolidColorBrush x:Key="DisplayBoxForeground" Color="#141633" />
-    <SolidColorBrush x:Key="DisplayBoxBackground" Color="#0e1014" Opacity="0.0"/>
+    <SolidColorBrush x:Key="DisplayBoxBackground" Color="#00583f7e"/>
 
+    <!-- Для окна о программе -->
+    <SolidColorBrush x:Key="AboutWindowBackground" Color="#80de95bc"/>
+    <SolidColorBrush x:Key="HyperlinkColor" Color="#44459c"/>
+    <SolidColorBrush x:Key="HyperlinkColor2" Color="#4b366a"/>
+    <SolidColorBrush x:Key="HyperlinkColor3" Color="#3c4168"/>
 
 
 
@@ -57,7 +62,6 @@
     <Color x:Key="EqualButtonHoverBackgroundColor">#bf81a2</Color>
     <Color x:Key="EqualButtonPressedBackgroundColor">#de95bc</Color>
     <Color x:Key="EqualButtonForegroundColor">#141633</Color>
-
 
     <!-- Кисти для кнопок -->
     <SolidColorBrush x:Key="ButtonBackgroundBrush" Color="{DynamicResource ButtonBackgroundColor}" Opacity="0.6" />

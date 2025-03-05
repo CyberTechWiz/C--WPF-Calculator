@@ -134,7 +134,8 @@ namespace WpfApp1
         // О программе
         private void About_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Сохранить как...");
+            AboutWindow aboutWindow = new AboutWindow(); // Создать экземпляр окна
+            aboutWindow.Show(); // Открыть окно как модальное
         }
 
 
@@ -214,6 +215,22 @@ namespace WpfApp1
             ThemePopup.IsOpen = false; // Закрыть Popup после выбора
             MenuPopup.IsOpen = false; // Закрыть Popup после выбора
             
+        }
+        private void UniversityTheme1_Click(object sender, RoutedEventArgs e)
+        {
+            // Применяем темную тему
+            ThemeManager.ApplyTheme("UniversityTheme1");
+            ThemePopup.IsOpen = false; // Закрыть Popup после выбора
+            MenuPopup.IsOpen = false; // Закрыть Popup после выбора
+
+        }
+        private void UniversityTheme2_Click(object sender, RoutedEventArgs e)
+        {
+            // Применяем темную тему
+            ThemeManager.ApplyTheme("UniversityTheme2");
+            ThemePopup.IsOpen = false; // Закрыть Popup после выбора
+            MenuPopup.IsOpen = false; // Закрыть Popup после выбора
+
         }
     }
 }

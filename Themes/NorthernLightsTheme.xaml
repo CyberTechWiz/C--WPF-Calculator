@@ -21,9 +21,11 @@
 
     <!-- Цвет текста диспеля -->
     <SolidColorBrush x:Key="DisplayBoxForeground" Color="#adc47b" />
-    <SolidColorBrush x:Key="DisplayBoxBackground" Color="#0e1014" Opacity="0.0"/>
-
-
+    <SolidColorBrush x:Key="DisplayBoxBackground" Color="#0025132d"/>
+    <SolidColorBrush x:Key="AboutWindowBackground" Color="#8025132d"/>
+    <SolidColorBrush x:Key="HyperlinkColor" Color="#9954ba"/>
+    <SolidColorBrush x:Key="HyperlinkColor2" Color="#746e9a"/>
+    <SolidColorBrush x:Key="HyperlinkColor3" Color="#572d87"/>
 
 
 

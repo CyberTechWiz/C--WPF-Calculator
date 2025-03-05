@@ -8,8 +8,9 @@
         Title="Калькулятор" Height="560" Width="340" 
         MinWidth="340" MinHeight="500"
         WindowStyle="None"       
+        ResizeMode="CanResizeWithGrip"
         FontFamily="pack://application:,,,/media/fonts/#Cera Pro Light"
-        AllowsTransparency="True">
+        AllowsTransparency="True" Icon="/calc.png">
 
     <Window.Background>
         <DynamicResource ResourceKey="BackgroundImage" />
@@ -87,6 +88,8 @@
                     <Button Content="Dark Lavender" Click="DarkLavenderTheme_Click" Style="{DynamicResource ContextMenuTitleBarButtonStyle}" Margin="5" />
                     <Button Content="Violet Sunrise" Click="VioletSunriseTheme_Click" Style="{DynamicResource ContextMenuTitleBarButtonStyle}" Margin="5" />
                     <Button Content="Northern Lights" Click="NorthernLightsTheme_Click" Style="{DynamicResource ContextMenuTitleBarButtonStyle}" Margin="5" />
+                    <Button Content="University1" Click="UniversityTheme1_Click" Style="{DynamicResource ContextMenuTitleBarButtonStyle}" Margin="5" />
+                    <Button Content="University2" Click="UniversityTheme2_Click" Style="{DynamicResource ContextMenuTitleBarButtonStyle}" Margin="5" />
                 </StackPanel>
             </Border>
         </Popup>

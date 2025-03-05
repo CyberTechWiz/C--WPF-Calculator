@@ -5,24 +5,42 @@
     <TargetFramework>net7.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
+    <AssemblyName>Calc 1.0</AssemblyName>
+    <RootNamespace>WpfApp1</RootNamespace>
+    <ApplicationIcon>Media\Images\calc.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="calc.png" />
     <None Remove="Media\backgrounds\DarkBackground.png" />
     <None Remove="Media\backgrounds\DarkLavenderBackground.png" />
     <None Remove="Media\backgrounds\LightBackground.png" />
     <None Remove="Media\backgrounds\NorthernLightsBackground.png" />
+    <None Remove="Media\backgrounds\UniversityTheme1Background.png" />
+    <None Remove="Media\backgrounds\UniversityTheme2Background.jpg" />
     <None Remove="Media\backgrounds\VioletSunriseBackground.png" />
     <None Remove="Media\fonts\Cera Pro Light.otf" />
     <None Remove="Media\fonts\Cera Pro Regular.otf" />
     <None Remove="Media\Images\black_gear.png" />
+    <None Remove="Media\Images\calc.png" />
     <None Remove="Media\Images\lavender.png" />
     <None Remove="Media\Images\NorthernLights_gear.png" />
+    <None Remove="Media\Images\university1_gear.png" />
+    <None Remove="Media\Images\university2_gear.png" />
     <None Remove="Media\Images\Violet_cloud.png" />
     <None Remove="Media\Images\white_gear.png" />
+    <None Remove="violet_cloud.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Media\Images\calc.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="calc.png" />
+    <Resource Include="Media\backgrounds\UniversityTheme1Background.png" />
+    <Resource Include="Media\backgrounds\UniversityTheme2Background.jpg" />
+    <Resource Include="Media\Images\calc.png" />
     <Resource Include="Media\Images\NorthernLights_gear.png" />
   </ItemGroup>
 
@@ -43,8 +61,11 @@
     <Resource Include="Media\fonts\Cera Pro Regular.otf" />
     <Resource Include="Media\Images\black_gear.png" />
     <Resource Include="Media\Images\lavender.png" />
+    <Resource Include="Media\Images\university1_gear.png" />
+    <Resource Include="Media\Images\university2_gear.png" />
     <Resource Include="Media\Images\Violet_cloud.png" />
     <Resource Include="Media\Images\white_gear.png" />
+    <Resource Include="violet_cloud.png" />
   </ItemGroup>
 
   <ItemGroup>

@@ -38,53 +38,53 @@
 
             <!-- Кнопки для калькулятора -->
             <!-- 1-ая строка кнопок -->
-            <Button Grid.Row="1" Grid.Column="0" Content="sin" FontSize="20" Margin="5,5,5,5" Style="{StaticResource FlatButtonStyle}" FontWeight="Normal"/>
-            <Button Grid.Row="1" Grid.Column="1" Content="x²" FontSize="20" Margin="5,5,5,5" Style="{StaticResource FlatButtonStyle}" FontWeight="Normal"/>
-            <Button Grid.Row="1" Grid.Column="2" Content="√x" FontSize="20" Margin="5,5,5,5" Style="{StaticResource FlatButtonStyle}" FontWeight="Normal"/>
-            <Button Grid.Row="1" Grid.Column="3" Content="C" FontSize="20" Margin="5,5,5,5" Style="{StaticResource FlatButtonStyle}" FontWeight="Normal"/>
-            <Button Grid.Row="1" Grid.Column="4" Content="⌫" FontSize="20" Margin="5,5,5,5" Style="{StaticResource FlatButtonStyle}" FontWeight="Normal"/>
+            <Button Grid.Row="1" Grid.Column="0" Content="sin" FontSize="20" Margin="5,5,5,5" Style="{DynamicResource FlatButtonStyle}" FontWeight="Normal"/>
+            <Button Grid.Row="1" Grid.Column="1" Content="x²" FontSize="20" Margin="5,5,5,5" Style="{DynamicResource FlatButtonStyle}" FontWeight="Normal"/>
+            <Button Grid.Row="1" Grid.Column="2" Content="√x" FontSize="20" Margin="5,5,5,5" Style="{DynamicResource FlatButtonStyle}" FontWeight="Normal"/>
+            <Button Grid.Row="1" Grid.Column="3" Content="C" FontSize="20" Margin="5,5,5,5" Style="{DynamicResource FlatButtonStyle}" FontWeight="Normal"/>
+            <Button Grid.Row="1" Grid.Column="4" Content="⌫" FontSize="20" Margin="5,5,5,5" Style="{DynamicResource FlatButtonStyle}" FontWeight="Normal"/>
             
 
             <!-- 2-ая строка кнопок -->
-            <Button Grid.Row="2" Grid.Column="0" Content="cos" FontSize="20" Margin="5,5,5,5" Style="{StaticResource FlatButtonStyle}" FontWeight="Normal"/>
-            <Button Grid.Row="2" Grid.Column="1" Content="xʸ" FontSize="20" Margin="5,5,5,5" Style="{StaticResource FlatButtonStyle}" FontWeight="Normal"/>
-            <Button Grid.Row="2" Grid.Column="2" Content="ʸ√x" FontSize="20" Margin="5,5,5,5" Style="{StaticResource FlatButtonStyle}" FontWeight="Normal"/>
-            <Button Grid.Row="2" Grid.Column="3" Content="eˣ" FontSize="20" Margin="5,5,5,5" Style="{StaticResource FlatButtonStyle}" FontWeight="Normal"/>
-            <Button Grid.Row="2" Grid.Column="4" Content="/" FontSize="20" Margin="5,5,5,5" Style="{StaticResource OperationFlatButtonStyle}" FontWeight="Normal"/>
+            <Button Grid.Row="2" Grid.Column="0" Content="cos" FontSize="20" Margin="5,5,5,5" Style="{DynamicResource FlatButtonStyle}" FontWeight="Normal"/>
+            <Button Grid.Row="2" Grid.Column="1" Content="xʸ" FontSize="20" Margin="5,5,5,5" Style="{DynamicResource FlatButtonStyle}" FontWeight="Normal"/>
+            <Button Grid.Row="2" Grid.Column="2" Content="ʸ√x" FontSize="20" Margin="5,5,5,5" Style="{DynamicResource FlatButtonStyle}" FontWeight="Normal"/>
+            <Button Grid.Row="2" Grid.Column="3" Content="eˣ" FontSize="20" Margin="5,5,5,5" Style="{DynamicResource FlatButtonStyle}" FontWeight="Normal"/>
+            <Button Grid.Row="2" Grid.Column="4" Content="/" FontSize="20" Margin="5,5,5,5" Style="{DynamicResource OperationFlatButtonStyle}" FontWeight="Normal"/>
 
             <!-- 2-ая строка кнопок -->
-            <Button Grid.Row="3" Grid.Column="0" Content="tan" FontSize="20" Margin="5,5,5,5" Style="{StaticResource FlatButtonStyle}" FontWeight="Normal"/>
-            <Button Grid.Row="3" Grid.Column="1" Content="(" FontSize="20" Margin="5,5,5,5" Style="{StaticResource FlatButtonStyle}" FontWeight="Normal"/>
-            <Button Grid.Row="3" Grid.Column="2" Content=")" FontSize="20" Margin="5,5,5,5" Style="{StaticResource FlatButtonStyle}" FontWeight="Normal"/>
-            <Button Grid.Row="3" Grid.Column="3" Content="x!" FontSize="20" Margin="5,5,5,5" Style="{StaticResource FlatButtonStyle}" FontWeight="Normal"/>
-            <Button Grid.Row="3" Grid.Column="4" Content="×" FontSize="20" Margin="5,5,5,5" Style="{StaticResource OperationFlatButtonStyle}" FontWeight="Normal"/>
+            <Button Grid.Row="3" Grid.Column="0" Content="tan" FontSize="20" Margin="5,5,5,5" Style="{DynamicResource FlatButtonStyle}" FontWeight="Normal"/>
+            <Button Grid.Row="3" Grid.Column="1" Content="(" FontSize="20" Margin="5,5,5,5" Style="{DynamicResource FlatButtonStyle}" FontWeight="Normal"/>
+            <Button Grid.Row="3" Grid.Column="2" Content=")" FontSize="20" Margin="5,5,5,5" Style="{DynamicResource FlatButtonStyle}" FontWeight="Normal"/>
+            <Button Grid.Row="3" Grid.Column="3" Content="x!" FontSize="20" Margin="5,5,5,5" Style="{DynamicResource FlatButtonStyle}" FontWeight="Normal"/>
+            <Button Grid.Row="3" Grid.Column="4" Content="×" FontSize="20" Margin="5,5,5,5" Style="{DynamicResource OperationFlatButtonStyle}" FontWeight="Normal"/>
 
             <!-- 3-ая строка кнопок -->
-            <Button Grid.Row="4" Grid.Column="0" Content="cot" FontSize="20" Margin="5,5,5,5" Style="{StaticResource FlatButtonStyle}"/>
-            <Button Grid.Row="4" Grid.Column="1" Content="7" FontSize="20" Margin="5,5,5,5" Style="{StaticResource LightFlatButtonStyle}" FontWeight="Bold" FontFamily="pack://application:,,,/media/fonts/#Cera Pro Regular"/>
-            <Button Grid.Row="4" Grid.Column="2" Content="8" FontSize="20" Margin="5,5,5,5" Style="{StaticResource LightFlatButtonStyle}" FontWeight="Bold" FontFamily="pack://application:,,,/media/fonts/#Cera Pro Regular"/>
-            <Button Grid.Row="4" Grid.Column="3" Content="9" FontSize="20" Margin="5,5,5,5" Style="{StaticResource LightFlatButtonStyle}" FontWeight="Bold" FontFamily="pack://application:,,,/media/fonts/#Cera Pro Regular"/>
-            <Button Grid.Row="4" Grid.Column="4" Content="-" FontSize="20" Margin="5,5,5,5" Style="{StaticResource OperationFlatButtonStyle}" FontWeight="Normal"/>
+            <Button Grid.Row="4" Grid.Column="0" Content="cot" FontSize="20" Margin="5,5,5,5" Style="{DynamicResource FlatButtonStyle}"/>
+            <Button Grid.Row="4" Grid.Column="1" Content="7" FontSize="20" Margin="5,5,5,5" Style="{DynamicResource LightFlatButtonStyle}" FontWeight="Bold" FontFamily="pack://application:,,,/media/fonts/#Cera Pro Regular"/>
+            <Button Grid.Row="4" Grid.Column="2" Content="8" FontSize="20" Margin="5,5,5,5" Style="{DynamicResource LightFlatButtonStyle}" FontWeight="Bold" FontFamily="pack://application:,,,/media/fonts/#Cera Pro Regular"/>
+            <Button Grid.Row="4" Grid.Column="3" Content="9" FontSize="20" Margin="5,5,5,5" Style="{DynamicResource LightFlatButtonStyle}" FontWeight="Bold" FontFamily="pack://application:,,,/media/fonts/#Cera Pro Regular"/>
+            <Button Grid.Row="4" Grid.Column="4" Content="-" FontSize="20" Margin="5,5,5,5" Style="{DynamicResource OperationFlatButtonStyle}" FontWeight="Normal"/>
 
             <!-- 4-ая строка кнопок -->
-            <Button Grid.Row="5" Grid.Column="0" Content="log" FontSize="20" Margin="5,5,5,5" Style="{StaticResource FlatButtonStyle}"/>
-            <Button Grid.Row="5" Grid.Column="1" Content="4" FontSize="20" Margin="5,5,5,5" Style="{StaticResource LightFlatButtonStyle}" FontWeight="Bold" FontFamily="pack://application:,,,/media/fonts/#Cera Pro Regular"/>
-            <Button Grid.Row="5" Grid.Column="2" Content="5" FontSize="20" Margin="5,5,5,5" Style="{StaticResource LightFlatButtonStyle}" FontWeight="Bold" FontFamily="pack://application:,,,/media/fonts/#Cera Pro Regular"/>
-            <Button Grid.Row="5" Grid.Column="3" Content="6" FontSize="20" Margin="5,5,5,5" Style="{StaticResource LightFlatButtonStyle}" FontWeight="Normal" FontFamily="pack://application:,,,/media/fonts/#Cera Pro Regular"/>
-            <Button Grid.Row="5" Grid.Column="4" Content="+" FontSize="20" Margin="5,5,5,5" Style="{StaticResource OperationFlatButtonStyle}" FontWeight="Normal"/>
+            <Button Grid.Row="5" Grid.Column="0" Content="log" FontSize="20" Margin="5,5,5,5" Style="{DynamicResource FlatButtonStyle}"/>
+            <Button Grid.Row="5" Grid.Column="1" Content="4" FontSize="20" Margin="5,5,5,5" Style="{DynamicResource LightFlatButtonStyle}" FontWeight="Bold" FontFamily="pack://application:,,,/media/fonts/#Cera Pro Regular"/>
+            <Button Grid.Row="5" Grid.Column="2" Content="5" FontSize="20" Margin="5,5,5,5" Style="{DynamicResource LightFlatButtonStyle}" FontWeight="Bold" FontFamily="pack://application:,,,/media/fonts/#Cera Pro Regular"/>
+            <Button Grid.Row="5" Grid.Column="3" Content="6" FontSize="20" Margin="5,5,5,5" Style="{DynamicResource LightFlatButtonStyle}" FontWeight="Normal" FontFamily="pack://application:,,,/media/fonts/#Cera Pro Regular"/>
+            <Button Grid.Row="5" Grid.Column="4" Content="+" FontSize="20" Margin="5,5,5,5" Style="{DynamicResource OperationFlatButtonStyle}" FontWeight="Normal"/>
 
             <!-- 5-ая строка кнопок -->
-            <Button Grid.Row="6" Grid.Column="0" Content="ln" FontSize="20" Margin="5,5,5,5" Style="{StaticResource FlatButtonStyle}" FontWeight="Bold"/>
-            <Button Grid.Row="6" Grid.Column="1" Content="1" FontSize="20" Margin="5,5,5,5" Style="{StaticResource LightFlatButtonStyle}" FontWeight="Bold" FontFamily="pack://application:,,,/media/fonts/#Cera Pro Regular"/>
-            <Button Grid.Row="6" Grid.Column="2" Content="2" FontSize="20" Margin="5,5,5,5" Style="{StaticResource LightFlatButtonStyle}" FontWeight="Bold" FontFamily="pack://application:,,,/media/fonts/#Cera Pro Regular"/>
-            <Button Grid.Row="6" Grid.Column="3" Content="3" FontSize="20" Margin="5,5,5,5" Style="{StaticResource LightFlatButtonStyle}" FontWeight="Normal" FontFamily="pack://application:,,,/media/fonts/#Cera Pro Regular"/>
-            <Button Grid.Row="6" Grid.Column="4" Grid.RowSpan="2" Content="=" FontSize="20" Margin="5,5,5,5" Style="{StaticResource EqualFlatButtonStyle}" FontWeight="Normal"/>
+            <Button Grid.Row="6" Grid.Column="0" Content="ln" FontSize="20" Margin="5,5,5,5" Style="{DynamicResource FlatButtonStyle}" FontWeight="Bold"/>
+            <Button Grid.Row="6" Grid.Column="1" Content="1" FontSize="20" Margin="5,5,5,5" Style="{DynamicResource LightFlatButtonStyle}" FontWeight="Bold" FontFamily="pack://application:,,,/media/fonts/#Cera Pro Regular"/>
+            <Button Grid.Row="6" Grid.Column="2" Content="2" FontSize="20" Margin="5,5,5,5" Style="{DynamicResource LightFlatButtonStyle}" FontWeight="Bold" FontFamily="pack://application:,,,/media/fonts/#Cera Pro Regular"/>
+            <Button Grid.Row="6" Grid.Column="3" Content="3" FontSize="20" Margin="5,5,5,5" Style="{DynamicResource LightFlatButtonStyle}" FontWeight="Normal" FontFamily="pack://application:,,,/media/fonts/#Cera Pro Regular"/>
+            <Button Grid.Row="6" Grid.Column="4" Grid.RowSpan="2" Content="=" FontSize="20" Margin="5,5,5,5" Style="{DynamicResource EqualFlatButtonStyle}" FontWeight="Normal"/>
 
             <!-- 6-ая строка кнопок -->
-            <Button Grid.Row="7" Grid.Column="0" Content="bas" FontSize="20" Margin="5,5,5,5" Style="{StaticResource DarkFlatButtonStyle}" FontWeight="Normal"/>
-            <Button Grid.Row="7" Grid.Column="1" Content="+/-" FontSize="20" Margin="5,5,5,5" Style="{StaticResource FlatButtonStyle}" FontWeight="Bold"/>
-            <Button Grid.Row="7" Grid.Column="2" Content="0" FontSize="20" Margin="5,5,5,5" Style="{StaticResource LightFlatButtonStyle}" FontWeight="Normal" FontFamily="pack://application:,,,/media/fonts/#Cera Pro Regular"/>
-            <Button Grid.Row="7" Grid.Column="3" Content="," FontSize="20" Margin="5,5,5,5" Style="{StaticResource FlatButtonStyle}" FontWeight="Normal"/>
+            <Button Grid.Row="7" Grid.Column="0" Content="bas" FontSize="20" Margin="5,5,5,5" Style="{DynamicResource DarkFlatButtonStyle}" FontWeight="Normal"/>
+            <Button Grid.Row="7" Grid.Column="1" Content="+/-" FontSize="20" Margin="5,5,5,5" Style="{DynamicResource FlatButtonStyle}" FontWeight="Bold"/>
+            <Button Grid.Row="7" Grid.Column="2" Content="0" FontSize="20" Margin="5,5,5,5" Style="{DynamicResource LightFlatButtonStyle}" FontWeight="Normal" FontFamily="pack://application:,,,/media/fonts/#Cera Pro Regular"/>
+            <Button Grid.Row="7" Grid.Column="3" Content="," FontSize="20" Margin="5,5,5,5" Style="{DynamicResource FlatButtonStyle}" FontWeight="Normal"/>
             
         </Grid>
     </Grid>
