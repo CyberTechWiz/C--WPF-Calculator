@@ -1,13 +1,15 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Exe</OutputType>
     <TargetFramework>net7.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
     <AssemblyName>Calc 1.0</AssemblyName>
     <RootNamespace>WpfApp1</RootNamespace>
     <ApplicationIcon>Media\Images\calc.ico</ApplicationIcon>
+    <PublishSingleFile>true</PublishSingleFile> <!-- Создать один исполняемый файл -->
+    <SelfContained>true</SelfContained> <!-- Включить все зависимости -->
   </PropertyGroup>
 
   <ItemGroup>
