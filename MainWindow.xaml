@@ -51,7 +51,7 @@
                 </StackPanel>
 
                 <!-- Заголовок окна -->
-                <TextBlock Text="Калькулятор" 
+                <TextBlock Text="Calculator" 
                            Foreground="{DynamicResource TitleBarForeground}" 
                            FontSize="19" 
                            VerticalAlignment="Center" 
