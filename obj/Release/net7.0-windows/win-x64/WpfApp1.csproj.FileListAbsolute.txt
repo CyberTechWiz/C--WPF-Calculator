@@ -1,0 +1,45 @@
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\bin\Release\net7.0-windows\win-x64\Calc 1.0.exe
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\bin\Release\net7.0-windows\win-x64\Calc 1.0.dll.config
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\bin\Release\net7.0-windows\win-x64\Calc 1.0.deps.json
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\bin\Release\net7.0-windows\win-x64\Calc 1.0.runtimeconfig.json
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\bin\Release\net7.0-windows\win-x64\Calc 1.0.dll
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\bin\Release\net7.0-windows\win-x64\Calc 1.0.pdb
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\bin\Release\net7.0-windows\win-x64\Antlr4.Runtime.Standard.dll
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\bin\Release\net7.0-windows\win-x64\NCalc.dll
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\bin\Release\net7.0-windows\win-x64\MathNet.Numerics.dll
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\win-x64\WpfApp1.csproj.AssemblyReference.cache
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\win-x64\Styles\ButtonStyles.baml
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\win-x64\Styles\TextBoxStyles.baml
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\win-x64\Themes\DarkLavenderTheme.baml
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\win-x64\Themes\DarkTheme.baml
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\win-x64\Themes\LightTheme.baml
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\win-x64\Themes\NorthernLightsTheme.baml
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\win-x64\Themes\UniversityTheme1.baml
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\win-x64\Themes\UniversityTheme2.baml
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\win-x64\Themes\VioletSunriseTheme.baml
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\win-x64\AboutWindow.g.cs
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\win-x64\BasicCalculator.g.cs
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\win-x64\MainWindow.g.cs
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\win-x64\ScientificCalculator.g.cs
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\win-x64\App.g.cs
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\win-x64\Calc 1.0_Content.g.cs
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\win-x64\GeneratedInternalTypeHelper.g.cs
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\win-x64\Calc 1.0_MarkupCompile.cache
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\win-x64\Calc 1.0_MarkupCompile.lref
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\win-x64\App.baml
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\win-x64\AboutWindow.baml
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\win-x64\BasicCalculator.baml
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\win-x64\MainWindow.baml
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\win-x64\ScientificCalculator.baml
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\win-x64\Calc 1.0.g.resources
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\win-x64\WpfApp1.GeneratedMSBuildEditorConfig.editorconfig
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\win-x64\WpfApp1.AssemblyInfoInputs.cache
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\win-x64\WpfApp1.AssemblyInfo.cs
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\win-x64\WpfApp1.csproj.CoreCompileInputs.cache
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\win-x64\WpfApp1.sourcelink.json
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\win-x64\WpfApp1.csproj.Up2Date
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\win-x64\Calc 1.0.dll
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\win-x64\refint\Calc 1.0.dll
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\win-x64\Calc 1.0.pdb
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\win-x64\WpfApp1.genruntimeconfig.cache
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\win-x64\ref\Calc 1.0.dll

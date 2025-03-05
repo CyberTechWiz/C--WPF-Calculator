@@ -1,4 +1,6 @@
-# Калькулятор из ада
+# C# WPF .NET 7.0.
+
+## Калькулятор из ада
 Программа использует следующие библиотеки:
 1. CoreCLR-NCalc;
 2. MathNet.Numerics (для подсчёта факториала дробных чисел).
@@ -15,7 +17,7 @@
 
 5. Чтобы сменить тему надо нажать на шестеренку в левом углу на верхней панели управления.
 
-# WpfApp1
+## WpfApp1
  The program uses the following libraries:
 1. CoreCLR-NCalc;
 2. MathNet.Numerics (for calculating the factorial of fractional numbers).

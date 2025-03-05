@@ -30,6 +30,7 @@
 
 
 
+    
 
     <!-- Цвета для кнопок -->
     <Color x:Key="ButtonBackgroundColor">#343434</Color>

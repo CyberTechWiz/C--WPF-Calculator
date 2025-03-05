@@ -1,12 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "i58zzdfMwI4=",
+  "dgSpecHash": "mTafrICMj84=",
   "success": true,
   "projectFilePath": "D:\\project\\lang\\c++ proj\\vs\\wpf\\WpfApp1\\WpfApp1\\WpfApp1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kompusha\\.nuget\\packages\\antlr4.runtime.standard\\4.13.1\\antlr4.runtime.standard.4.13.1.nupkg.sha512",
     "C:\\Users\\Kompusha\\.nuget\\packages\\coreclr-ncalc\\3.1.253\\coreclr-ncalc.3.1.253.nupkg.sha512",
-    "C:\\Users\\Kompusha\\.nuget\\packages\\mathnet.numerics\\5.0.0\\mathnet.numerics.5.0.0.nupkg.sha512"
+    "C:\\Users\\Kompusha\\.nuget\\packages\\mathnet.numerics\\5.0.0\\mathnet.numerics.5.0.0.nupkg.sha512",
+    "C:\\Users\\Kompusha\\.nuget\\packages\\microsoft.net.illink.analyzers\\7.0.100-1.23211.1\\microsoft.net.illink.analyzers.7.0.100-1.23211.1.nupkg.sha512",
+    "C:\\Users\\Kompusha\\.nuget\\packages\\microsoft.net.illink.tasks\\7.0.100-1.23211.1\\microsoft.net.illink.tasks.7.0.100-1.23211.1.nupkg.sha512",
+    "C:\\Users\\Kompusha\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\7.0.20\\microsoft.aspnetcore.app.runtime.win-x64.7.0.20.nupkg.sha512",
+    "C:\\Users\\Kompusha\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\7.0.20\\microsoft.windowsdesktop.app.runtime.win-x64.7.0.20.nupkg.sha512",
+    "C:\\Users\\Kompusha\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\7.0.20\\microsoft.netcore.app.runtime.win-x64.7.0.20.nupkg.sha512"
   ],
   "logs": []
 }

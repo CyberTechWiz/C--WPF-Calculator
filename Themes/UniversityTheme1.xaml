@@ -31,6 +31,7 @@
     
 
 
+    
     <!-- Цвета для кнопок -->
     <Color x:Key="ButtonBackgroundColor">#e2b87b</Color>
     <Color x:Key="ButtonHoverBackgroundColor">#c29f6b</Color>

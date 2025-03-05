@@ -1,0 +1,3 @@
+C:\Users\Kompusha\Desktop\12\Calc 1.0.pdb
+C:\Users\Kompusha\Desktop\12\Calc 1.0.dll.config
+C:\Users\Kompusha\Desktop\12\Calc 1.0.exe

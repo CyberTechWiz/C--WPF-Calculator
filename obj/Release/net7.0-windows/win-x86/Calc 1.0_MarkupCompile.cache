@@ -1,0 +1,20 @@
+﻿Calc 1.0
+
+
+winexe
+C#
+.cs
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\obj\Release\net7.0-windows\win-x86\
+WpfApp1
+none
+false
+TRACE;RELEASE;NET;NET7_0;NETCOREAPP
+D:\project\lang\c++ proj\vs\wpf\WpfApp1\WpfApp1\App.xaml
+13622174832
+1-167137218
+8-2092275113
+201842524525
+AboutWindow.xaml;BasicCalculator.xaml;MainWindow.xaml;ScientificCalculator.xaml;Styles\ButtonStyles.xaml;Styles\TextBoxStyles.xaml;Themes\DarkLavenderTheme.xaml;Themes\DarkTheme.xaml;Themes\LightTheme.xaml;Themes\NorthernLightsTheme.xaml;Themes\UniversityTheme1.xaml;Themes\UniversityTheme2.xaml;Themes\VioletSunriseTheme.xaml;
+
+False
+

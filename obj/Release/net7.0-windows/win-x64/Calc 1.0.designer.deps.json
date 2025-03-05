@@ -1,0 +1,77 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "Antlr4.Runtime.Standard/4.13.1": {
+        "runtime": {
+          "lib/netstandard2.0/Antlr4.Runtime.Standard.dll": {
+            "assemblyVersion": "4.13.1.0",
+            "fileVersion": "4.13.1.0"
+          }
+        }
+      },
+      "CoreCLR-NCalc/3.1.253": {
+        "dependencies": {
+          "Antlr4.Runtime.Standard": "4.13.1"
+        },
+        "runtime": {
+          "lib/net6.0/NCalc.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "MathNet.Numerics/5.0.0": {
+        "runtime": {
+          "lib/net6.0/MathNet.Numerics.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.0.0"
+          }
+        }
+      },
+      "Microsoft.NET.ILLink.Analyzers/7.0.100-1.23211.1": {},
+      "Microsoft.NET.ILLink.Tasks/7.0.100-1.23211.1": {}
+    }
+  },
+  "libraries": {
+    "Antlr4.Runtime.Standard/4.13.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Da5+i4kFHUseJRZGcBG5fmZGpA/Ns180ibrQMxgZzjpQOnENVvSL5gi5HZ8Ncz8/AR2WsKbOg2lMBzjz0HUQcA==",
+      "path": "antlr4.runtime.standard/4.13.1",
+      "hashPath": "antlr4.runtime.standard.4.13.1.nupkg.sha512"
+    },
+    "CoreCLR-NCalc/3.1.253": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XrcIZAbjsnW+4/PJKd8bbfeDMYEM41cKK13DmgIRoH2+UPpoiu2mF7gfdfAsr10ePrzH4NyfD8Y3u8nbj9G2lQ==",
+      "path": "coreclr-ncalc/3.1.253",
+      "hashPath": "coreclr-ncalc.3.1.253.nupkg.sha512"
+    },
+    "MathNet.Numerics/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pg1W2VwaEQMAiTpGK840hZgzavnqjlCMTVSbtVCXVyT+7AX4mc1o89SPv4TBlAjhgCOo9c1Y+jZ5m3ti2YgGgA==",
+      "path": "mathnet.numerics/5.0.0",
+      "hashPath": "mathnet.numerics.5.0.0.nupkg.sha512"
+    },
+    "Microsoft.NET.ILLink.Analyzers/7.0.100-1.23211.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0GvbEgDGcUQA9KuWcQU1WwYHXt1tBzNr1Nls/M57rM7NA/AndFwCaCEoJpJkmxRY7xLlPDBnmGp8h5+FNqUngg==",
+      "path": "microsoft.net.illink.analyzers/7.0.100-1.23211.1",
+      "hashPath": "microsoft.net.illink.analyzers.7.0.100-1.23211.1.nupkg.sha512"
+    },
+    "Microsoft.NET.ILLink.Tasks/7.0.100-1.23211.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tvG8XZYLjT0o3WicCyKBZysVWo1jC9HdCFmNRmddx3WbAz0UCsd0qKZqpiEo99VLA8Re+FzWK51OcRldQPbt2Q==",
+      "path": "microsoft.net.illink.tasks/7.0.100-1.23211.1",
+      "hashPath": "microsoft.net.illink.tasks.7.0.100-1.23211.1.nupkg.sha512"
+    }
+  }
+}
